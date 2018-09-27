@@ -1,0 +1,40 @@
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: inherit;
+    line-height: 50px;
+    padding:80px;
+    /*background-image:url('./category.jpeg');*/
+    /*background-image: attr(imgUrl url);*/
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+
+.circle:hover{
+    transform: scale(1.1);
+}
+
+a {
+    /*color: #f5ecec;*/
+    color: #883f3f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover {
+    /*color: #309ACC;*/
+    color:gray();
+}
+
+.circle .circle-link {
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+
+}

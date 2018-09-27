@@ -1,0 +1,46 @@
+[
+  {
+    "image": "/images/painting1.jpg",
+    "title": "Portrait1",
+    "year": "1992",
+    "cols": 2,
+    "author": "PortraitAuthor1",
+    "publisher": "Portrait Publisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/self-portrait.jpg",
+    "title": "Portrait2",
+    "year": "1870",
+    "author": "PortraitAuthor1",
+    "publisher": "Portrait Publisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/woman.jpg",
+    "title": "Portrait3",
+    "year": "1980",
+    "cols": 2,
+    "author": "PortraitAuthor1",
+    "publisher": "Portrait Publisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/painting2.jpeg",
+    "title": "Portrait4",
+    "year": "1972",
+    "author": "PortraitAuthor1",
+    "publisher": "Portrait Publisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+
+  },
+  {
+    "image": "/images/night.jpeg",
+    "title": "Portrait5",
+    "year": "1888",
+    "author": "PortraitAuthor1",
+    "publisher": "Portrait Publisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+
+  }
+]

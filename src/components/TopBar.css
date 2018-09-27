@@ -1,0 +1,34 @@
+.bar {
+    flexGrow: 1;
+
+}
+
+.grow {
+    flexGrow: 1;
+}
+
+.menuButton {
+    marginLeft: -12;
+    marginRight: 20;
+    /*color="inherit";*/
+}
+
+.MuiToolbar-regular-38 {
+    min-height: 64px;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.order{
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-bar .div[class*="MuiToolbar"] {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-icon {
+    color: white;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "image": "/images/painting1.jpg",
+    "title": "Figure1",
+    "year": "year1",
+    "cols": 2,
+    "author": "FigureAuthor1",
+    "publisher": "FigurePublisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/self-portrait.jpg",
+    "title": "Figure2",
+    "year": "year2",
+    "author": "FigureAuthor1",
+    "publisher": "FigurePublisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/woman.jpg",
+    "title": "Figure3",
+    "year": "year3",
+    "cols": 2,
+    "author": "FigureAuthor1",
+    "publisher": "FigurePublisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/painting2.jpeg",
+    "title": "Figure4",
+    "year": "year4",
+    "author": "FigureAuthor1",
+    "publisher": "FigurePublisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  },
+  {
+    "image": "/images/night.jpeg",
+    "title": "Figure5",
+    "year": "year5",
+    "author": "FigureAuthor1",
+    "publisher": "FigurePublisher",
+    "description":"Lizards are a widespread group of squamate reptiles"
+  }
+]

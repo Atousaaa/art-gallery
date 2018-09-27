@@ -1,0 +1,116 @@
+html, body, #app, #app>div {
+    height: 100% !important;
+}
+
+.body{
+    height: 100% !important;
+}
+#app div{
+    height:100% !important;
+}
+
+.App {
+    text-align: center;
+    background-color: #a4bae4;
+    height: 100%;
+}
+
+/*.App-logo {*/
+    /*animation: App-logo-spin infinite 20s linear;*/
+    /*height: 80px;*/
+    /*margin-bottom: 10px;*/
+/*}*/
+
+.App-header {
+    /*background-color: #1e5267;*/
+    /*background-image:url('./cover.jpg');*/
+    height: 150px;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+
+    background-image: url('./cover1.jpg');
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.menu-class {
+    /*text-align: left;*/
+    color: white;
+
+}
+
+.App-title {
+    font-size: 23px;
+    padding-top: 15px;
+    /*animation: App-logo-spin infinite 20s;*/
+    height: 80px;
+    /*animation-direction: reverse;*/
+    line-height: 5;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.app-main {
+    padding-top: 25px;
+    background-image: url("./back2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.double-circle {
+    display: flex;
+    justify-content: space-evenly;
+    /*width: 655px;*/
+}
+
+.single-circle {
+    display: flex;
+    justify-content: center;
+}
+
+/*.cover{*/
+    /*background-image: url('./cover.jpg');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*height: 300px;*/
+/*}*/
+/*.Category {*/
+/*background-color: green;*/
+
+/*display: inline-block; !* Allow multiple elements on the same line *!*/
+
+/*width: 140px; !* Fix dimension *!*/
+/*height: 83px; !* width = height + padding-top (alignment text) *!*/
+/*padding-top: 57px;*/
+/*border-radius: 70px; !* width / 2 *!*/
+
+/*margin: 15px 70px;*/
+/*}*/
+
+/*.Category:first-child,*/
+/*.Category:last-child {*/
+/*display: block; !* Only one element on the line *!*/
+
+/*margin: 15px auto;*/
+/*}*/
+
+/*@media only screen and (max-width: 280px) {*/
+
+/*.Category {*/
+/*margin: 15px auto;*/
+/*}*/
+

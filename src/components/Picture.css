@@ -1,0 +1,45 @@
+.picture-title {
+    font-size: 20px;
+}
+
+.picture-box {
+    width: 70%;
+}
+
+.frame {
+    text-align: center;
+    padding: 10px;
+    border-style: solid;
+    border-color: #ad3f8f;
+    background-color: #bb91af;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    max-width: 345px;
+}
+
+.media {
+    height: 100px;
+}
+
+.frame:hover {
+    background-color: #f1bbe2;
+    /*transform: scale(2);*/
+}
+
+.picture-year {
+    font-size: 10px;
+    margin: 1px;
+}
+
+.picture-painter {
+    font-size: 12px;
+    margin: 0;
+}
+
+photo-move{
+    transform: rotate(20deg);
+}

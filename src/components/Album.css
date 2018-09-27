@@ -1,0 +1,55 @@
+.Album {
+    text-align: center;
+}
+
+.gallery{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #a4bae4;
+    height: 1000px;
+}
+
+.gallery .lastchild{
+    justify-content: left; /*How I fix the last line from left */
+}
+
+.gallery-title {
+    display: flex;
+    justify-content: center;
+    /*line-height: 150px;*/
+    font-size: 30px;
+    margin-top: 61px;
+    margin-bottom: 49px;
+}
+
+.gallery-header{
+    background-color: #1e5267;
+    height: 174px;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiGridList-root-67 {
+    background-position: top !important;
+    overflow-y: inherit !important;
+}
+
+
+.MuiCardMedia-root-76{
+    background-position: top !important;
+
+}
+
+.media {
+    height: 150px !important;
+}
+
+.test{
+    height: 20px;
+    width: 100px;
+    background-color: red;
+}

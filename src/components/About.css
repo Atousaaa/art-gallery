@@ -1,0 +1,39 @@
+.about-body{
+    margin:5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.office-img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+.about-text{
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.description{
+    background-color: #1e5267;
+    height: 150px;
+    padding: 20px;
+    color: white;
+    display:flex
+}
+
+.app-title-about{
+    font-size: 23px;
+}
+
+.about-header{
+    background-color: #1e5267;
+    height: 174px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}

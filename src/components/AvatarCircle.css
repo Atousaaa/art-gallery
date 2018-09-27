@@ -1,0 +1,46 @@
+/*.row {*/
+    /*display: flex;*/
+    /*justifyContent: center;*/
+/*}*/
+
+.avatar {
+    color: white;
+    margin: 10px;
+    font-size: 50px;
+    /*opacity: 0.5;*/
+
+}
+
+/*.bigAvatar {*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+/*}*/
+
+
+/*.avatar-circle {*/
+
+    /*height: 180px;*/
+    /*width: 180px;*/
+    /*border-radius: 50%;*/
+    /*border-radius: 50%;*/
+    /*display: inline-block;*/
+    /*text-align: inherit;*/
+    /*line-height: 180px;*/
+/*}*/
+
+
+/*.avatar-circle:hover{*/
+    /*background-color: #f1bbe2;*/
+    /*transform: scale(1.1);*/
+/*}*/
+
+.MuiAvatar-root-67 {
+    height: 180px !important;
+    width: 180px !important;
+    border-radius: 50% !important;
+}
+
+.MuiAvatar-root-67:hover {
+    background-color: #f1bbe2;
+    transform: scale(1.1);
+}

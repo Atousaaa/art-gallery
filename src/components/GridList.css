@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*overflow: hidden;*/
+    background-color: white;
+    padding-top: 10px;
+    width: 700px;
+}
+
+.gridList {
+    width: 500px;
+    height: 450px;
+}
+
+.subheader {
+    width: 100%;
+}
+
+
+.MuiGridList-root-28 {
+    overflow-y: inherit !important;
+}
