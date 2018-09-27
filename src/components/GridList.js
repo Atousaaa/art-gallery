@@ -18,8 +18,11 @@ class GridList extends React.Component {
     fetchCategory = (category) => {
         fetchJSON(`/api/topic/${category.toLowerCase()}`)
             .then(response => this.props.dispatchCategory({
-                data: response,
-                category: this.props.name.toLowerCase()
+                // data: response,
+                // category: this.props.name.toLowerCase()
+                selectedCategory: response,
+                categoryName: this.props.name.toLowerCase()
+
             }))
     }
 
@@ -66,10 +69,9 @@ const mapStateToProps = (state, { name }) => ( {
 } );
 
 const mapDispatchToProps = dispatch => ( {
-    dispatchCategory: (data) => dispatch(recieveCategory(data))
+    dispatchCategory: (selectedCategory) => dispatch(recieveCategory(selectedCategory))
 
 } )
-
 
 export default connect(
     mapStateToProps,

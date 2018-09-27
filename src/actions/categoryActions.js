@@ -1,19 +1,11 @@
 
 
 
-export const recieveCategory =  ({ data, category }) =>{
+export const recieveCategory =  ({ selectedCategory, categoryName }) =>{
     return {
         type: 'RECIEVE_CATEGORY',
-        data,
-        category
+        selectedCategory,
+        categoryName
     }
 }
 
-
-export const recieveCategoryDetails =  ({ data, category }) =>{
-    return {
-        type: 'RECIEVE_CATEGORY_DETAILS',
-        data,
-        category
-    }
-}

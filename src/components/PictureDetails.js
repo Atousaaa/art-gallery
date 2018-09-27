@@ -4,9 +4,7 @@ import TopBar from "./TopBar";
 import './PictureDetails.css';
 import {fetchJSON} from "../lib/requests";
 
-
 class PictureDetails extends React.Component{
-
 
     constructor(props) {
         super(props);
@@ -36,10 +34,9 @@ class PictureDetails extends React.Component{
     //     }
     // }
 
-    render(){
+    render() {
 
         const photoName = this.props.match.params.name;
-
         return(
             <div>
                 <header className="gallery-header">
