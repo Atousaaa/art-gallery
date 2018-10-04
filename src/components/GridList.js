@@ -68,14 +68,18 @@ const mapStateToProps = (state, { name }) => ( {
     category: state.categories[ name.toLowerCase() ]        //{name} is shortcut of prop category which has name
 } );
 
-const mapDispatchToProps = dispatch => ( {
-    dispatchCategory: (selectedCategory) => dispatch(recieveCategory(selectedCategory))
+// const mapDispatchToProps = dispatch => ( {
+//     dispatchCategory: (selectedCategory) => dispatch(recieveCategory(selectedCategory))
+//
+// } )
 
-} )
+// const test = (arg1) => 2 * arg1
+//
+// const multiplier = (num) => console.log(test(num) / 2);
+//
+// multiplier(7);
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    { dispatchCategory: recieveCategory }
 )(GridList)
-
-

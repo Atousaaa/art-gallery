@@ -1,7 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import {Provider} from 'react-redux';
-import {createStore} from "redux";
+import {createStore, applyMiddleware} from "redux";
+import logger from "redux-logger";
 import rootReducer from '../stores/rootReducer';
 import Home from "./Home";
 import About from "./About";
@@ -10,7 +11,7 @@ import PictureDetails from "./PictureDetails";
 
 
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(logger));
 
 class App extends React.Component {
 
