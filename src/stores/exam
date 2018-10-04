@@ -1,0 +1,62 @@
+// first dispatch
+const t = {
+    category: "Portrait",
+    text: "hello babaaa",
+    title: "Portrait3",
+    type: "RECIEVE_REVIEW"
+}
+
+// 1. run reducer initalState {}
+
+function(state = {}, action) {
+    switch (type) {
+        case 'RECIEVE_REVIEW':
+            return {
+                [ category ]: {
+                    [title]: [text]
+                }
+            }
+    }
+}
+
+// 2. run reducer currentState { landscape: { scream: [test] } } }
+
+function(state = {}, action) {
+    switch (type) {
+        case 'RECIEVE_REVIEW':
+            return {
+                ...state,
+                [ category ]: {
+                    [title]: [text]
+                }
+            }
+    }
+}
+
+/*
+* { landscape: { scream: [fsadfasdf] } }, portrait: { scream: [fasdfd] } } }
+* */
+
+// 3. run reducer currentState { landscape: { scream: [fsadfasdf] } }, portrait: { scream: [fasdfd] } } }
+
+function(state = {}, action) {
+    switch (type) {
+        case 'RECIEVE_REVIEW':
+            if (state[category] && state[category][title]) {
+                state[category][title].push(newReviewText)
+            } else {
+                state[category][title] = [text]
+            }
+
+            return {
+                ...state,
+                [ category ]: {
+                    [title]: [text]
+                }
+            }
+    }
+}
+
+/*
+* { landscape: { scream: [fsadfasdf] } }, portrait: { scream: [fasdfd, daddy] } } }
+* */
