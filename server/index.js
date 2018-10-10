@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 // work with the file system on your computer.
 const fs = require('fs');
-//
+
 
 const landscape = require('./landscape.json');
 const illustration = require('./illustration.json');
@@ -61,19 +61,37 @@ console.log("fetching ....")
 });
 
 
+// for showing reviews
+
+app.get('/api/reviews/:topic/:title', (req, res) => {
+    const topic = req.params.topic;
+    const title = req.params.title;
+    console.log("fetching reviews ....")
+
+    function getReviews(topic,title){
+
+        if(fs.existsSync(`./server/reviews/${topic}/${title}.json`)) {
+            return require(`./reviews/${topic}/${title}.json`);
+        }
+        else {
+            return [];
+        }
+    }
+
+    const reviews = getReviews(topic,title);
+    console.log("hier///", reviews)
+    res.json(reviews);
+});
+
+// End reviews
+
 app.post('/api/savereview', (req, res) => {
 
     const recievedCategory = req.body.category.toLowerCase();
     const recievedTitle = req.body.title.toLowerCase();
     const recievedText = req.body.text.toLowerCase();
     const recievedUsername = req.body.username.toLowerCase();
-
-    // let fileData = null;
-    // const rawFileData = fs.readFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`,"utf8");
-
-
-    const fileData = makeNewDirectory(recievedCategory,recievedTitle);
-    console.log("filedata is ...",{fileData});
+    const fileData = makeNewDirectory(recievedCategory, recievedTitle);
 
     if (fileData != null) {
         saveReview (recievedCategory,recievedTitle,recievedUsername,recievedText,fileData);
@@ -84,72 +102,30 @@ app.post('/api/savereview', (req, res) => {
 })
 
 function saveFirstReview (recievedCategory,recievedTitle,recievedUsername,recievedText){
-    const newFileContent = {
-        [recievedCategory]: {
-            [recievedTitle]: [{
+    const newFileContent = [{
                 name: recievedUsername,
                 review: recievedText
-            }]
-        }
-    }
+    }]
     fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(newFileContent, null, 4));
 }
 
 function saveReview (recievedCategory,recievedTitle,recievedUsername,recievedText,fileData){
 
-    console.log("cat and title",recievedCategory,recievedTitle);
-    // if both category and title exist
-    if (( fileData.hasOwnProperty(recievedCategory) ) && ( fileData[recievedCategory].hasOwnProperty(recievedTitle) )) {
-        fileData[recievedCategory][recievedTitle].push({ "name": recievedUsername, "review": recievedText });
+        fileData.push({ "name": recievedUsername, "review": recievedText });
         fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
-    }
-    // only if category exist
-    else if (fileData.hasOwnProperty(recievedCategory)) {
-        console.log("only category exist!!!!!");
-        fileData[recievedCategory] = Object.assign(fileData[recievedCategory], {
-            [recievedTitle]: [{
-                name: recievedUsername,
-                review: recievedText
-            }]
-        })
-
-
-        fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
-    }
-    // if category and title does not exist
-    else
-    {
-        console.log("category and title does not exist!");
-        //"object.assign" uses for adding to one object another object,It will return the target object.
-        const newFileContent = Object.assign(fileData, {
-            [recievedCategory]: {
-                [recievedTitle]: [{
-                    name: recievedUsername,
-                    review: recievedText
-                }]
-            }
-        })
-        fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(newFileContent, null, 4));
-    }
-
 }
 
 
 function makeNewDirectory(recievedCategory,recievedTitle){
 
-    console.log("no folder existttt");
-
-    if (!fs.existsSync(`./server/reviews/${recievedCategory}`)) {
+    if ((!fs.existsSync(`./server/reviews/${recievedCategory}`)) && (!fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) ){
         fs.mkdirSync(`./server/reviews/${recievedCategory}`);
         return null
-
     }
-    if(fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) {
-        console.log("cat o title exist");
+    else if(fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) {
         return require(`./reviews/${recievedCategory}/${recievedTitle}.json`)
     }
-    else if (fs.existsSync(`./server/reviews/${recievedCategory}`)) {
-        console.log("cat only exist");
+    else if ((fs.existsSync(`./server/reviews/${recievedCategory}`)) && (!fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) ){
         return null
     }
 }
@@ -159,93 +135,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//new post test (Viktor) START
-//
-// app.post('/api/savereview', (req, res) => {
-//     const topic = req.body.category;
-//     const title = req.body.title;
-//
-//     const recievedCategory = req.body.category.toLowerCase();
-//     const recievedTitle = req.body.title.toLowerCase();
-//     const recievedText = req.body.text.toLowerCase();
-//     const recievedUsername = req.body.username.toLowerCase();
-//
-//     // const rawFileData= "";
-//     const rawFileData = fs.readFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`,"utf8");
-//
-//     let fileData = null;
-//
-//     if (rawFileData.length > 0 ) {
-//         fileData = JSON.parse(rawFileData);
-//     }
-//
-//     if (!fs.existsSync(`./server/reviews/${recievedCategory}`)) {
-//         // Do something
-//         console.log("no folder existttt");
-//         fs.mkdirSync(`./server/reviews/${recievedCategory}`);
-//     }
-//
-//     console.log('file!! ', typeof rawFileData, rawFileData.length)
-//     // fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
-//
-//
-//     if (fileData != null) {
-//         console.log("cat and title",recievedCategory,recievedTitle);
-//         // if both category and title exist
-//         if (( fileData.hasOwnProperty(recievedCategory) ) && ( fileData[recievedCategory].hasOwnProperty(recievedTitle) )) {
-//             fileData[recievedCategory][recievedTitle].push({ "name": recievedUsername, "review": recievedText });
-//             fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
-//         }
-//         // only if category exist
-//         else if (fileData.hasOwnProperty(recievedCategory)) {
-//             console.log("only category exist!!!!!");
-//             fileData[recievedCategory] = Object.assign(fileData[recievedCategory], {
-//                 [recievedTitle]: [{
-//                     name: recievedUsername,
-//                     review: recievedText
-//                 }]
-//             })
-//
-//
-//             fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
-//         }
-//         // if category and title does not exist
-//         else
-//         {
-//             console.log("category and title does not exist!");
-//             //"object.assign" uses for adding to one object another object,It will return the target object.
-//             const newFileContent = Object.assign(fileData, {
-//                 [recievedCategory]: {
-//                     [recievedTitle]: [{
-//                         name: recievedUsername,
-//                         review: recievedText
-//                     }]
-//                 }
-//             })
-//             fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(newFileContent, null, 4));
-//         }
-//         // when the file is empty(only first time)
-//     }else{
-//         console.log("new file should create!!!!!");
-//         const newFileContent = {
-//             [recievedCategory]: {
-//                 [recievedTitle]: [{
-//                     name: recievedUsername,
-//                     review: recievedText
-//                 }]
-//             }
-//         }
-//         fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(newFileContent, null, 4));
-//     }
-//     res.json('Review was saved');
-//
-//
-// })
 
-//new app.post viktor finished successfully
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //start totaly fine post data
 //
@@ -324,3 +214,5 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 // app.get('/api/topic/:topic', (req, res) => {
 //     res.send({ express: req.param("topic") });
 // });
+
+

@@ -6,3 +6,5 @@ export default combineReducers({
     categories,   //state object
     reviews
 })
+
+

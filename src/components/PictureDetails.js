@@ -11,7 +11,10 @@ class PictureDetails extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            pictureDetails: {}
+            pictureDetails: {
+                title: '',
+                image: ''
+            }
         };
     }
 
@@ -27,11 +30,14 @@ class PictureDetails extends React.Component {
     }
 
     render() {
+        console.log('testoingg0', this.state.pictureDetails)
+
         const { title, image, author, year, publisher, description } = this.state.pictureDetails;
         return (
             <div>
                 <header className="gallery-header">
                     <TopBar/>
+                    testt ${}
                     <div className="detail-title">
                         <h1>{title} Details</h1>
                     </div>
