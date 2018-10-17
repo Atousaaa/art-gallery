@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "Silhouettes of a memoire",
+    "image": "/images/silhouettes.jpg",
+    "city": "Munich",
+    "artist": "JM Robert",
+    "date": "August 23 2019",
+    "description": "Lilac Gallery is pleased to present “Silhouettes of a Mémoire” an exhibition of works by JM Robert. A striking collection of fine art mixed media with his latest works that allure beauty and exuberance.",
+    "rating": "3"
+  },
+  {
+    "id": "2",
+    "title": "Typosty",
+    "image": "/images/typos.jpg",
+    "city": "Konstanz",
+    "artist": "Daniel Fiorda & Ro Barragan",
+    "date": "March 10 2019",
+    "description": "Lilac Gallery is pleased to present “Typos” an exhibition of works by Daniel Fiorda & Ro Barragan. An intriguing selection of works by two Argentinian artists.",
+    "rating": "2"
+  },
+  {
+    "id": "3",
+    "title": "Hopping for joy",
+    "image": "/images/hopping.jpg",
+    "city": "Koln",
+    "artist": "Hunt Slonem",
+    "date": "February 6 2019",
+    "description": " A wonderful collection of Hunt Slonem most recent creations exploring new and different media that invites us to celebrate nature and the simplicity of these incredible animals.",
+    "rating": "1"
+  },
+  {
+    "id": "4",
+    "title": "Quite mind",
+    "image": "/images/quite-mind.png",
+    "city": "Munich",
+    "artist": "Stephanie London",
+    "date": "April 17 2019",
+    "description": "Inspired by the histories of her subject matter—objects culled from flea markets and second hand stores. Stephanie London paints intimate pictures of vases, birds, and florals that masquerade as still lifes. ",
+    "rating": "4"
+  }
+]

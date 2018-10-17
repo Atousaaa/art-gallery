@@ -1,45 +1,59 @@
 import React from 'react';
 import './PictureDetails.css';
 import TopBar from "./TopBar";
+import connect from "react-redux/es/connect/connect";
 import './PictureDetails.css';
 import PropTypes from "prop-types";
 import { fetchJSON } from "../lib/requests";
 import Review from './Review';
+// import { recieveCategory } from "../actions/categoryActions";
+import { showDetails } from '../actions/pictureDetailsAction';
+import pictureDetails from "../stores/pictureDetails";
 
 class PictureDetails extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            pictureDetails: {
-                title: '',
-                image: ''
-            }
-        };
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         pictureDetails: {
+    //             title: '',
+    //             image: ''
+    //         }
+    //     };
+    // }
+
+    // fetchDetails() {
+    //     const category = this.props.match.params.category
+    //     const name = this.props.match.params.name
+    //     fetchJSON(`/api/detail/${category.toLowerCase()}/${name}`)
+    //         .then(pictureDetails => this.setState({ pictureDetails }))
+    // }
 
     fetchDetails() {
         const category = this.props.match.params.category
         const name = this.props.match.params.name
         fetchJSON(`/api/detail/${category.toLowerCase()}/${name}`)
-            .then(pictureDetails => this.setState({ pictureDetails }))
+            .then(response => this.props.dispatchPhotos({
+                photoDetails:response,
+                category,
+                name
+                }))
     }
 
     componentDidMount() {
-        this.fetchDetails();
+        this.fetchDetails(this.props.match.params.category,this.props.match.params.name);
     }
 
     render() {
-        console.log('testoingg0', this.state.pictureDetails)
+        console.log('testoingg', this.props.photoDetails)
 
-        const { title, image, author, year, publisher, description } = this.state.pictureDetails;
+        const { title, image, author, year, publisher, description } = this.props.photoDetails;
         return (
             <div>
                 <header className="gallery-header">
                     <TopBar/>
-                    testt ${}
                     <div className="detail-title">
-                        <h1>{title} Details</h1>
+                        <h1>{this.props.photoDetails.name} Details</h1>
                     </div>
                 </header>
                 <div className="first-box">
@@ -47,7 +61,7 @@ class PictureDetails extends React.Component {
                         <img src={`${image}`} className="photo-detail" alt="scream"/>
                     </div>
                     <div className="short-desc">
-                        <p>Photo Name : {title}</p>
+                        <p>Photo Name : {this.props.photoDetails.name}</p>
                         <p>{`Author : ${author}`}</p>
                         <p>{`Year : ${year}`}</p>
                         <p>{`Publisher : ${publisher}`}</p>
@@ -63,16 +77,38 @@ class PictureDetails extends React.Component {
 }
 
 PictureDetails.defaultProps = {
-  pictureDetails: {}
+  // pictureDetails: {}
+    photoDetails: []
 }
 
 PictureDetails.propTypes = {
-  pictureDetails: PropTypes.object
+  // pictureDetails: PropTypes.object
+    photoDetails: PropTypes.array,
+    dispatchPhotos: PropTypes.func
 }
 
-export default PictureDetails;
+
+const mapStateToProps = (state) => {
+    console.log("?????picture", state)
+    // const pictureDetails = state.categories[category].find(({ title }) => title === name);
+        const photoDetails = state.photoDetails;
+    const test = 1;
+    return {
+        photoDetails,
+        test
+    }
+};
 
 
+// export default PictureDetails;
+
+export default connect(
+    mapStateToProps,
+    { dispatchPhotos: showDetails }
+)(PictureDetails)
+
+
+// export default PictureDetails;
 //
 // document.getElementById("reviewForm").addEventListener("submit",function(event)
 // {
@@ -80,27 +116,18 @@ export default PictureDetails;
 //    console.log(event.target.elements["input1"].value)
 //  })
 
-
 // const mapStateToProps = (state, { photoName }) => ( {
 //     pictureDetails: state.categories[ photoName ]
 // } );
-
-// const mapStateToProps = (state, { match: { params: { category, name } }}) => {
-//     const pictureDetails = state.categories[category].find(({ title }) => title === name);
 //
-//     return {
-//         pictureDetails
-//     }
-// };
-
-// export default PictureDetails;
-
-// export default connect(
 //
-//     mapStateToProps
+// Since i was eligible for CPRNE exam, and I did the exam. Bc i thought in my mind that focus
+// on the exam and then focus on RN's file  is better than Studying as a RPN in the college.
 //
-// )(PictureDetails)
-
+// آتوسا مبخوام بگم كه كلاس هاى آر پى ان براى من اينفورميشن جديد نداشت و به نظرم اومد كه نيازى ندارم
+// و بهتره همه فوكوس خودم رو روى گپ هاى آر ان و امتحان آر ان بذارم
+//
+//
 
 
 

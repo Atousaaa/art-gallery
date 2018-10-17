@@ -3,5 +3,9 @@
   {
     "name": "About",
     "link": "/About"
-  }
+  },
+   {
+     "name": "Galleries",
+     "link": "/Galleries"
+   }
 ]

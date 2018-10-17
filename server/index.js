@@ -61,6 +61,23 @@ console.log("fetching ....")
 });
 
 
+//for fetching the gallery shows
+
+app.get('/api/galleries', (req, res) => {
+    if(fs.existsSync('./server/gallery.json')){
+        return res.json(require('./gallery'));
+    }
+    else{
+        return res.status(500).send('No Gallery at the moment exists');
+    }
+});
+
+
+
+
+
+
+
 // for showing reviews
 
 app.get('/api/reviews/:topic/:title', (req, res) => {

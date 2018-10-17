@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./About";
 import Album from './Album';
 import PictureDetails from "./PictureDetails";
+import Gallery from "./Gallery";
 
 
 
@@ -24,6 +25,7 @@ class App extends React.Component {
                         <hr/>
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/About" component={About}/>
+                        <Route exact path="/galleries" component={Gallery}/>
                         <Route exact path="/Album/:category" component={Album} />
                         <Route exact path="/detail/:category/:name" component={PictureDetails} />
                     </div>
