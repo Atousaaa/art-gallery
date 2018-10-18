@@ -12,7 +12,7 @@ import './Sorting.css';
 
 class Sorting extends React.Component {
     state = {
-        Alphabet: '',
+        alphabet: '',
         open: false,
     };
 
@@ -33,7 +33,6 @@ class Sorting extends React.Component {
 
     render() {
 
-        const { classes } = this.props;
         return (
             <form autoComplete="off">
                 <Button className="button" onClick={this.handleOpen}>
@@ -45,7 +44,7 @@ class Sorting extends React.Component {
                         open={this.state.open}
                         onClose={this.handleClose}
                         onOpen={this.handleOpen}
-                        value={this.state.age}
+                        value={this.state.alphabet}
                         onChange={this.handleChange}
                         inputProps={{
                             name: "sorting",
@@ -67,7 +66,6 @@ class Sorting extends React.Component {
 
 
 Sorting.propTypes = {
-    classes: PropTypes.object.isRequired,
     dispatchSorting: PropTypes.func
 };
 

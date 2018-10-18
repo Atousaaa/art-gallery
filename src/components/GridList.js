@@ -39,7 +39,7 @@ class GridList extends React.Component {
     render() {
         return (
             <div className="root">
-                <GridListComponent cellHeight={300} className="gridList" cols={3}>
+                <GridListComponent cellHeight={"auto"} className="gridList" cols={3}>
                     {this.props.category.map(p =>
                         <GridListTile key={p.title} cols={p.cols || 1}>
 

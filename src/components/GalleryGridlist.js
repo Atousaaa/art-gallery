@@ -8,6 +8,7 @@ import { setGalleries } from "../actions/GalleriesAction";
 import { connect } from 'react-redux';
 import './GalleryGridlist.css';
 
+
 import MediaCard from "./MediaCard";
 import Sorting from "./Sorting";
 
@@ -16,7 +17,7 @@ class GalleryGridlist extends React.Component {
     FetchGalleries = () => {
         fetchJSON('/api/galleries')
             .then(response => this.props.dispatchGalleries(response))
-            .catch(error => "errrooorrr")
+            .catch(error => "Please Try again :)")
     }
 
     componentDidMount() {
@@ -30,11 +31,11 @@ class GalleryGridlist extends React.Component {
                 <div className="sorting">
                     <Sorting/>
                 </div>
-                <GridListComponent cellHeight={300} className="gridList" cols={3}>
+                <GridListComponent cellHeight={"auto"} className="gridList" cols={3}>
                     {this.props.galleriesList.map(p =>
-                        <GridListTile key={p.id}>
+                        <GridListTile  key={p.id}>
 
-                            <MediaCard galleries={p}/>
+                            <MediaCard gallery={p}/>
                         </GridListTile>
                     )}
                 </GridListComponent>

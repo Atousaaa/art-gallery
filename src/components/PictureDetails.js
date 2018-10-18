@@ -41,11 +41,18 @@ class PictureDetails extends React.Component {
     }
 
     componentDidMount() {
-        this.fetchDetails(this.props.match.params.category,this.props.match.params.name);
+        //
+        // if(this.props.photoDetails.length > 0) {
+        //     console.log("photo details and state is full",this.state,this.props.photoDetails);
+            this.fetchDetails(this.props.match.params.category, this.props.match.params.name);
+        // }
+        // else if (this.props.photoDetails.length <= 0){
+        //     console.log("photoDetails is empty bcs you refresh it",this.props.photoDetails);
+        // }
     }
 
     render() {
-        console.log('testoingg', this.props.photoDetails)
+        console.log('testingg', this.props.photoDetails)
 
         const { title, image, author, year, publisher, description } = this.props.photoDetails;
         return (
@@ -89,9 +96,10 @@ PictureDetails.propTypes = {
 
 
 const mapStateToProps = (state) => {
-    console.log("?????picture", state)
+    // console.log("?????picture", state.photoDetails.photoDetails)
     // const pictureDetails = state.categories[category].find(({ title }) => title === name);
-        const photoDetails = state.photoDetails;
+    console.log(';the statw is...', state)
+        const photoDetails = state.photoDetails.photoDetails;
     const test = 1;
     return {
         photoDetails,
@@ -120,14 +128,3 @@ export default connect(
 //     pictureDetails: state.categories[ photoName ]
 // } );
 //
-//
-// Since i was eligible for CPRNE exam, and I did the exam. Bc i thought in my mind that focus
-// on the exam and then focus on RN's file  is better than Studying as a RPN in the college.
-//
-// آتوسا مبخوام بگم كه كلاس هاى آر پى ان براى من اينفورميشن جديد نداشت و به نظرم اومد كه نيازى ندارم
-// و بهتره همه فوكوس خودم رو روى گپ هاى آر ان و امتحان آر ان بذارم
-//
-//
-
-
-

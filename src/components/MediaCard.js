@@ -7,37 +7,53 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import DeleteIcon from '@material-ui/icons/Delete';
+import { NavLink } from "react-router-dom";
+
 
 import './MediaCard.css';
-import Sorting from './Sorting.css';
+import IconButton from "@material-ui/core/IconButton/IconButton";
+import Picture from "./Picture";
+import GridListTile from "@material-ui/core/GridListTile/GridListTile";
 
 class MediaCard extends Component {
 
+    handleClick = event => {
+        // this.setState({anchorEl: event.currentTarget});
+    };
+
     render() {
-    const galleries = this.props.galleries;
+    const gallery = this.props.gallery;
         return (
-            <div id-="mediaCard">
+            <div className="mediaCard">
 
                 <Card className="card" >
                     <CardActionArea>
                         <CardMedia
                             className="media"
-                            image={galleries.image}
+                            image={gallery.image}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="subheading" component="h2">
-                                {galleries.title}
+                                {gallery.title}
                             </Typography>
                             <Typography component="p">
-                                {galleries.description}
+                                {gallery.shortDescription}
                             </Typography>
                         </CardContent>
 
                     </CardActionArea>
                     <CardActions>
-                        <Button size="small" color="primary">
-                            Learn More
-                        </Button>
+                        <IconButton className="delete_button" aria-label="Delete">
+                            <DeleteIcon />
+                        </IconButton>
+
+                        <NavLink to={`/Galleries/${this.props.gallery.title}`}>
+                            <Button  size="small" color="primary">
+                                Learn More
+                            </Button>
+                        </NavLink>
+
                     </CardActions>
                 </Card>
             </div>
@@ -47,7 +63,14 @@ class MediaCard extends Component {
 
 
 MediaCard.propTypes = {
-    galleries: PropTypes.object
+    gallery: PropTypes.object
 };
 
 export default MediaCard;
+
+
+
+
+{/*<Button  onClick={this.handleClick} size="small" color="primary">*/}
+{/*Learn More*/}
+{/*</Button>*/}

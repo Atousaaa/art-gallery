@@ -3,6 +3,13 @@
 }
 
 .media {
-    height: 140px;
+    /*height: 200px !important;*/
 }
 
+.delete_button{
+    margin: 12px;
+}
+
+.mediaCard{
+
+}

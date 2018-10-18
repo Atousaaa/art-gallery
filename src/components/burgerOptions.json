@@ -1,11 +1,15 @@
 
  [
-  {
-    "name": "About",
-    "link": "/About"
-  },
    {
-     "name": "Galleries",
+     "name": "Upcoming Galleries",
      "link": "/Galleries"
+   },
+   {
+     "name": "Albums",
+     "link": "/"
+   },
+   {
+     "name": "About",
+     "link": "/About"
    }
 ]

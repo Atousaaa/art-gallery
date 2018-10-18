@@ -9,7 +9,7 @@ import About from "./About";
 import Album from './Album';
 import PictureDetails from "./PictureDetails";
 import Gallery from "./Gallery";
-
+import GalleryDetails from "./GalleryDetails";
 
 
 const store = createStore(rootReducer, applyMiddleware(logger));
@@ -26,6 +26,7 @@ class App extends React.Component {
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/About" component={About}/>
                         <Route exact path="/galleries" component={Gallery}/>
+                        <Route exact path="/galleries/:title" component={GalleryDetails}/>
                         <Route exact path="/Album/:category" component={Album} />
                         <Route exact path="/detail/:category/:name" component={PictureDetails} />
                     </div>

@@ -14,7 +14,7 @@ class Gallery extends React.Component{
                         <TopBar/>
                     </div>
                     <span className="about-text">
-                        <h1 className="title-gallery">Galleries</h1>
+                        <h1 className="title-gallery">Upcoming Galleries</h1>
                     </span>
                 </header>
                 <div>

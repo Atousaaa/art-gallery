@@ -6,7 +6,8 @@
     "city": "Munich",
     "artist": "JM Robert",
     "date": "August 23 2019",
-    "description": "Lilac Gallery is pleased to present “Silhouettes of a Mémoire” an exhibition of works by JM Robert. A striking collection of fine art mixed media with his latest works that allure beauty and exuberance.",
+    "shortDescription": "A striking collection of fine art mixed media",
+    "description": "Art Gallery is pleased to present “Silhouettes of a Mémoire” an exhibition of works by JM Robert. A striking collection of fine art mixed media with his latest works that allure beauty and exuberance.",
     "rating": "3"
   },
   {
@@ -16,7 +17,8 @@
     "city": "Konstanz",
     "artist": "Daniel Fiorda & Ro Barragan",
     "date": "March 10 2019",
-    "description": "Lilac Gallery is pleased to present “Typos” an exhibition of works by Daniel Fiorda & Ro Barragan. An intriguing selection of works by two Argentinian artists.",
+    "shortDescription": "An intriguing selection of works by two Argentinian artists",
+    "description": "Art Gallery is pleased to present “Typos” an exhibition of works by Daniel Fiorda & Ro Barragan. An intriguing selection of works by two Argentinian artists.",
     "rating": "2"
   },
   {
@@ -26,6 +28,7 @@
     "city": "Koln",
     "artist": "Hunt Slonem",
     "date": "February 6 2019",
+    "shortDescription": "most recent creations exploring new and different media",
     "description": " A wonderful collection of Hunt Slonem most recent creations exploring new and different media that invites us to celebrate nature and the simplicity of these incredible animals.",
     "rating": "1"
   },
@@ -36,6 +39,7 @@
     "city": "Munich",
     "artist": "Stephanie London",
     "date": "April 17 2019",
+    "shortDescription": "intimate pictures of vases, birds, and florals",
     "description": "Inspired by the histories of her subject matter—objects culled from flea markets and second hand stores. Stephanie London paints intimate pictures of vases, birds, and florals that masquerade as still lifes. ",
     "rating": "4"
   }
