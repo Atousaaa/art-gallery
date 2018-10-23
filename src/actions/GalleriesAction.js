@@ -31,3 +31,12 @@ export const sortGalleries = (sortValue, galleriesData) => {
 
 
 }
+
+export const setGalleryDetails = (photoData) => {
+    console.log("inside galleries action and photo data is :",photoData);
+    return {
+        type: 'SET_GALLERY_DETAILS',
+        photoData
+    }
+}
+//TODO FIX THE SET GALLERY ACTION ABOVE

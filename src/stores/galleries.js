@@ -1,10 +1,15 @@
 export default (state = [], action) => {  //state of reducer
-    const { type, galleriesData } = action;
+    const { type, galleriesData, photoData } = action;
 
     switch (type) {
 
         case 'SET_GALLERIES' :
             return galleriesData;
+
+        case 'SET_GALLERY_DETAILS' :
+            console.log("we are in gallery reducer and details page and photodata is :",photoData);
+            return photoData;   //TODO: CHECK AND FIX HERE
+
         case 'SORT_BY_ALPHABET' :
             return state.slice().sort(function (a, b) {
                 const nameA = a.title.toUpperCase(),

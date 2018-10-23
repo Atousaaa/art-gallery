@@ -73,6 +73,27 @@ app.get('/api/galleries', (req, res) => {
 });
 
 
+app.get('/api/galleries/:title', (req, res) => {
+
+    console.log("fetching the gallery details for one photo",req.params.title);
+    const title = req.params.title;
+
+    const galleriesList = require ('./gallery');
+
+    const found = galleriesList.find(function(element) {
+
+        return element.title === title ;
+    });
+
+    if(!found) {
+        console.log("there is no found");
+        return res.status(500).send(`wrong topic: ${Object.keys(categories)}` );
+    }
+
+    res.json(found);
+
+});
+//todo: fix the gallery details function above
 
 
 
@@ -100,7 +121,7 @@ app.get('/api/reviews/:topic/:title', (req, res) => {
     res.json(reviews);
 });
 
-// End reviews
+
 
 app.post('/api/savereview', (req, res) => {
 

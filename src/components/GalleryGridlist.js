@@ -14,6 +14,7 @@ import Sorting from "./Sorting";
 
 class GalleryGridlist extends React.Component {
 
+
     FetchGalleries = () => {
         fetchJSON('/api/galleries')
             .then(response => this.props.dispatchGalleries(response))
@@ -21,27 +22,35 @@ class GalleryGridlist extends React.Component {
     }
 
     componentDidMount() {
-        this.FetchGalleries();
+        if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
+            console.log("length of galleryList", this.props.galleriesList.length);
+            this.FetchGalleries();
+        }
     }
 
+
     render() {
-        console.log(this.props.galleriesList)
+        const { galleriesList } = this.props;
+
         return (
             <div>
                 <div className="sorting">
                     <Sorting/>
                 </div>
                 <GridListComponent cellHeight={"auto"} className="gridList" cols={3}>
-                    {this.props.galleriesList.map(p =>
-                        <GridListTile  key={p.id}>
+                    {
+                        Array.isArray(galleriesList) && galleriesList.map(p =>
+                            <GridListTile key={p.id}>
+                                <MediaCard gallery={p}/>
+                            </GridListTile>)
+                    }
 
-                            <MediaCard gallery={p}/>
-                        </GridListTile>
-                    )}
                 </GridListComponent>
             </div>
         )
+
     }
+
 }
 
 GalleryGridlist.defaultProps = {
@@ -54,6 +63,7 @@ GalleryGridlist.propTypes = {
 }
 
 function mapStateToProps(state) {
+    console.log("INSIDE MAP STATE TO PROPS", state.galleriesData);
     return { galleriesList: state.galleriesData }
 
 };

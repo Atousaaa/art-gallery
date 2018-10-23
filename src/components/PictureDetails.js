@@ -6,9 +6,7 @@ import './PictureDetails.css';
 import PropTypes from "prop-types";
 import { fetchJSON } from "../lib/requests";
 import Review from './Review';
-// import { recieveCategory } from "../actions/categoryActions";
 import { showDetails } from '../actions/pictureDetailsAction';
-import pictureDetails from "../stores/pictureDetails";
 
 class PictureDetails extends React.Component {
 
@@ -54,7 +52,7 @@ class PictureDetails extends React.Component {
     render() {
         console.log('testingg', this.props.photoDetails)
 
-        const { title, image, author, year, publisher, description } = this.props.photoDetails;
+        const { image, author, year, publisher, description } = this.props.photoDetails;
         return (
             <div>
                 <header className="gallery-header">

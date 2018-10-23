@@ -13,14 +13,13 @@ import { NavLink } from "react-router-dom";
 
 import './MediaCard.css';
 import IconButton from "@material-ui/core/IconButton/IconButton";
-import Picture from "./Picture";
-import GridListTile from "@material-ui/core/GridListTile/GridListTile";
+
 
 class MediaCard extends Component {
 
-    handleClick = event => {
-        // this.setState({anchorEl: event.currentTarget});
-    };
+    // handleClick = event => {
+    //     // this.setState({anchorEl: event.currentTarget});
+    // };
 
     render() {
     const gallery = this.props.gallery;
@@ -70,7 +69,3 @@ export default MediaCard;
 
 
 
-
-{/*<Button  onClick={this.handleClick} size="small" color="primary">*/}
-{/*Learn More*/}
-{/*</Button>*/}
