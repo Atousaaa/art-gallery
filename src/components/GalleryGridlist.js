@@ -22,7 +22,8 @@ class GalleryGridlist extends React.Component {
     }
 
     componentDidMount() {
-        if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
+        if ( this.props.galleriesList.length === 0 ) {
+        // if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
             console.log("length of galleryList", this.props.galleriesList.length);
             this.FetchGalleries();
         }
@@ -38,8 +39,8 @@ class GalleryGridlist extends React.Component {
                     <Sorting/>
                 </div>
                 <GridListComponent cellHeight={"auto"} className="gridList" cols={3}>
-                    {
-                        Array.isArray(galleriesList) && galleriesList.map(p =>
+                    { galleriesList.map( p =>
+                        // Array.isArray(galleriesList) && galleriesList.map(p =>
                             <GridListTile key={p.id}>
                                 <MediaCard gallery={p}/>
                             </GridListTile>)

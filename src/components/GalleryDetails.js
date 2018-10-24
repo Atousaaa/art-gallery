@@ -2,7 +2,7 @@ import React from 'react';
 import TopBar from "./TopBar";
 import connect from "react-redux/es/connect/connect";
 import PropTypes from "prop-types";
-import _ from 'underscore';
+import {isEmpty} from 'ramda';
 
 import { setGalleryDetails } from '../actions/GalleriesAction';
 import './GalleryDetails.css';
@@ -21,7 +21,7 @@ class GalleryDetails extends React.Component{
     componentDidMount() {
         const photoData = this.props.photoData;
 
-        if (_.isEmpty(photoData)){
+        if (isEmpty(photoData)){
             this.fetchGalleryDetails();
         }
     }
@@ -86,8 +86,19 @@ function mapStateToProps(state,title) {
 
     }else{
 
-        const {photoData} = state.galleryDetails;
-            return {photoData};
+        //viktor fixed
+
+
+        // const { photoData } = state.galleryDetails
+        //
+        // return {
+        //     photoData: state.galleryDetails.photoData
+        // }
+        //
+        //instead of above lines write bellow line
+
+
+       return { photoData: state.galleryDetails.photoData}
     }
 
 };
