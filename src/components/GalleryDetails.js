@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from "./TopBar";
 import connect from "react-redux/es/connect/connect";
 import PropTypes from "prop-types";
+import _ from 'underscore';
 
 import { setGalleryDetails } from '../actions/GalleriesAction';
 import './GalleryDetails.css';
@@ -18,7 +19,9 @@ class GalleryDetails extends React.Component{
     }
 
     componentDidMount() {
-        if (this.props.photoData) {
+        const photoData = this.props.photoData;
+
+        if (_.isEmpty(photoData)){
             this.fetchGalleryDetails();
         }
     }
@@ -68,22 +71,24 @@ GalleryDetails.propTypes = {
 }
 
 function mapStateToProps(state,title) {
-   if(state.galleriesData.photoData) {
-       const photoData = state.galleriesData.photoData;
-       return { photoData }
-   }
-   else{
-       const photoName = title.match.params.title;
-       const galleriesList = state.galleriesData;
 
-       function findPhoto(photoName) {
-           return galleriesList.find(function (element) {
-               return element.title = photoName;
-           })
-       }
+    if ( state.galleriesData.length > 0) {
 
-       return { photoData: findPhoto(photoName) }
-   }
+        const photoName = title.match.params.title;
+        const galleriesList = state.galleriesData;
+
+        function findPhoto(photoName) {
+            return galleriesList.find(function (element) {
+                return element.title = photoName;
+            })
+        }
+        return { photoData: findPhoto(photoName) }
+
+    }else{
+
+        const {photoData} = state.galleryDetails;
+            return {photoData};
+    }
 
 };
 
