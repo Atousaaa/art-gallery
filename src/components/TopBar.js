@@ -9,7 +9,7 @@ import AccountCircle from '@material-ui/icons/Home';
 class TopBar extends React.Component {
 
     handleChange = (event, value) => {
-        window.location.replace(`/`)
+        window.location.replace('/')
     };
 
     render() {
@@ -31,3 +31,9 @@ class TopBar extends React.Component {
 }
 
 export default TopBar;
+
+
+//for testing
+// const tree = about.find('.app-bar').find(AppBar).find(Toolbar);
+// expect(tree.find(Burger).exists()).toBe(true);
+// expect(tree.find(IconButton).()).toBe(true);

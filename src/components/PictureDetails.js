@@ -1,7 +1,7 @@
 import React from 'react';
 import './PictureDetails.css';
 import TopBar from "./TopBar";
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import './PictureDetails.css';
 import PropTypes from "prop-types";
 import { fetchJSON } from "../lib/requests";

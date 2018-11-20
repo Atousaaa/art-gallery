@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from "./TopBar";
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import {isEmpty} from 'ramda';
 

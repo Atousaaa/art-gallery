@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import './About.css';
-import office from './office.jpg';
 import TopBar from "./TopBar";
 
 class About extends Component {
@@ -30,7 +29,7 @@ class About extends Component {
                     </div>
                     <div>
                         <span className="about-image">
-                             <img src={office} className="office-img" alt=""/>
+                             <img src="images/office.jpg" className="office-img" alt=""/>
                         </span>
                     </div>
                 </div>

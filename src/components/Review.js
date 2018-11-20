@@ -1,6 +1,6 @@
 import React from 'react';
 // import R from 'ramda';
-import connect from "react-redux/es/connect/connect";
+import {connect} from "react-redux";
 import PropTypes from "prop-types";
 import { recieveReview } from "../actions/reviewActions";
 import { setReviews } from "../actions/setReviewsAction";

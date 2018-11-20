@@ -93,8 +93,42 @@ app.get('/api/galleries/:title', (req, res) => {
     res.json(found);
 
 });
-//todo: fix the gallery details function above
 
+////for fetching the artist details
+
+app.get('/api/artists/:name', (req, res) => {
+
+    console.log("inside artist fetching",req.params.name);
+    const name = req.params.name;
+    console.log("artist name from request",name);
+    const fullnameArray = name.split(' ');
+
+    if(fullnameArray.includes("fiorda")){
+
+        console.log("artist is fiorda");
+        return res.json(require('./artists/fiorda'));
+
+    }else if (fullnameArray.includes("london")){
+
+        console.log("artist is london");
+        return res.json(require('./artists/london'));
+
+    }else if (fullnameArray.includes("robert")){
+
+        console.log("artist is robert");
+
+        return res.json(require('./artists/robert'));
+
+    }else if (fullnameArray.includes("slonem")){
+
+        console.log("artist is slonem");
+        return res.json(require('./artists/slonem'));
+
+    }
+    console.log(fullnameArray);
+    return {};
+
+});
 
 
 

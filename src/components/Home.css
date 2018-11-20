@@ -29,7 +29,7 @@ html, body, #app, #app>div {
     color: white;
     margin-top: 50px;
 
-    background-image: url('./cover1.jpg');
+    background-image: url('./header1.jpg');
     background-size: cover;
     background-position:center center;
     background-repeat: no-repeat;

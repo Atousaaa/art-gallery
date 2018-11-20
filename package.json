@@ -7,6 +7,8 @@
     "@material-ui/icons": "^3.0.1",
     "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "es6-promise": "^4.2.5",
     "express": "^4.16.3",
     "isomorphic-fetch": "^2.2.1",
@@ -18,8 +20,10 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
+    "react-test-renderer": "^16.6.1",
     "redux": "^4.0.0",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "sinon": "^7.1.1"
   },
   "scripts": {
     "client": "react-scripts start",
@@ -30,6 +34,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "jsdom": "^13.0.0",
     "redux-devtools": "^3.4.1"
   }
 }

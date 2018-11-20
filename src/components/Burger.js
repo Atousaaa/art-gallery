@@ -5,6 +5,7 @@ import Menu from '@material-ui/core/Menu';
 import './Burger.css';
 import BurgerItems from './BurgerItems';
 import BurgerOption from './burgerOptions';
+// import trackSomething from 'something'   example for stub test
 
 const paperProps = {
     style: {maxHeight: 48 * 4.5, width: 200}
@@ -20,7 +21,8 @@ class Burger extends React.Component {
     };
 
     handleClick = event => {
-        this.setState({anchorEl: event.currentTarget});
+         // trackSomething('string');   example for stub test
+        this.setState({anchorEl: event.currentTarget}); // is the element that event listener is attached to.
     };
 
     handleClose = () => {
@@ -35,7 +37,7 @@ class Burger extends React.Component {
             <div>
                 <IconButton
                     id='menue-burger'
-                    aria-label="More"
+                    aria-label="More"   //ARIA IS FLAG SPECIALLY FOR SCREEN READER (BLIND)
                     aria-owns={open ? 'long-menu' : null}
                     aria-haspopup="true"
                     onClick={this.handleClick}

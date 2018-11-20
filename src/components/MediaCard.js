@@ -7,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import DeleteIcon from '@material-ui/icons/Delete';
 import { NavLink } from "react-router-dom";
 
 
@@ -43,9 +42,14 @@ class MediaCard extends Component {
 
                     </CardActionArea>
                     <CardActions>
-                        <IconButton className="delete_button" aria-label="Delete">
-                            <DeleteIcon />
-                        </IconButton>
+                        {/*<IconButton className="delete_button" aria-label="Delete">*/}
+                            {/*<DeleteIcon />*/}
+                        {/*</IconButton>*/}
+                        <NavLink to={`/artists/${this.props.gallery.artist}`}>
+                            <Button  size="small" color="primary">
+                                {this.props.gallery.artist}
+                            </Button>
+                        </NavLink>
 
                         <NavLink to={`/Galleries/${this.props.gallery.title}`}>
                             <Button  size="small" color="primary">
