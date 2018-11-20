@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b28bbfa0-9147-4023-b754-03aace0a0f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/artists/Fiorda.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/artists/London.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/artists/Robert.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/artists/Slonem.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/artists/fiorda.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/artists/london.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/artists/robert.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/artists/slonem.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/About.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/Burger.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/NavigationClient.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/TopBar.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/artistDetailsAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ArtistDetails.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ArtistDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/artistDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/gallery.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/gallery.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GalleryDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GalleryDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MediaCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MediaCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PictureDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PictureDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/office.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/office.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/rootReducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,7 +38,7 @@
           <entry key="jpg" value="17" />
           <entry key="js" value="418" />
           <entry key="json" value="155" />
-          <entry key="md" value="4" />
+          <entry key="md" value="5" />
           <entry key="png" value="1" />
           <entry key="rnc" value="1" />
           <entry key="ts" value="9" />
@@ -85,7 +51,7 @@
           <entry key="Image" value="35" />
           <entry key="JSON" value="155" />
           <entry key="JavaScript" value="422" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="1" />
           <entry key="TypeScript" value="9" />
@@ -226,7 +192,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Burger.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="163">
@@ -234,6 +200,30 @@
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor>
+                    <folding>
+                      <element signature="e#0#41#0" expanded="true" />
+                      <element signature="e#0#41#0" expanded="true" />
+                      <element signature="e#0#42#0" expanded="true" />
+                      <element signature="e#0#35#0" expanded="true" />
+                      <element signature="e#0#26#0" expanded="true" />
+                      <element signature="e#0#26#0" expanded="true" />
+                      <element signature="n#!!doc" expanded="true" />
+                      <element signature="e#0#26#0" expanded="true" />
+                      <element signature="e#0#26#0" expanded="true" />
+                      <element signature="e#0#28#0" expanded="true" />
+                      <element signature="e#0#28#0" expanded="true" />
+                    </folding>
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -397,8 +387,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-173" />
-    <option name="y" value="382" />
+    <option name="x" value="91" />
+    <option name="y" value="146" />
     <option name="width" value="1650" />
     <option name="height" value="945" />
   </component>
@@ -624,7 +614,7 @@
       <workItem from="1541427582056" duration="17972000" />
       <workItem from="1542005998387" duration="56652000" />
       <workItem from="1542609084832" duration="14924000" />
-      <workItem from="1542711015679" duration="215000" />
+      <workItem from="1542711015679" duration="641000" />
     </task>
     <servers />
   </component>
@@ -661,10 +651,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="602832000" />
+    <option name="totallyTimeSpent" value="603258000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-173" y="382" width="1650" height="945" extended-state="0" />
+    <frame x="91" y="146" width="1650" height="945" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15346839" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -698,13 +688,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/gallery.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/GalleriesAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1017,6 +1000,28 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <folding>
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#42#0" expanded="true" />
+              <element signature="e#0#35#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="n#!!doc" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
