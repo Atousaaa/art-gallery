@@ -32,7 +32,7 @@ class Review extends React.Component{
             text: event.target.input1.value,
             username: event.target.username.value
         })
-    }
+}
 
     render(){
         console.log("category is",this.props.category);

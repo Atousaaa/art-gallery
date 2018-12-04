@@ -8,7 +8,7 @@ import BurgerOption from './burgerOptions';
 // import trackSomething from 'something'   example for stub test
 
 const paperProps = {
-    style: {maxHeight: 48 * 4.5, width: 200}
+    style: { maxHeight: 48 * 4.5, width: 200 }
 };
 
 
@@ -21,16 +21,16 @@ class Burger extends React.Component {
     };
 
     handleClick = event => {
-         // trackSomething('string');   example for stub test
-        this.setState({anchorEl: event.currentTarget}); // is the element that event listener is attached to.
+        // trackSomething('string');   example for stub test
+        this.setState({ anchorEl: event.currentTarget }); // is the element that event listener is attached to.
     };
 
     handleClose = () => {
-        this.setState({anchorEl: null});
+        this.setState({ anchorEl: null });
     };
 
     render() {
-        const {anchorEl} = this.state;
+        const { anchorEl } = this.state;
         const open = Boolean(anchorEl);
 
         return (

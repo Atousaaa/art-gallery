@@ -9,30 +9,53 @@ import Picture from "./Picture";
 import { fetchJSON } from "../lib/requests";
 import { NavLink } from 'react-router-dom';
 
-class GridList extends React.Component {
+export class GridList extends React.Component {
 
     // constructor(props) {
     //     super(props);
     // }
 
-    fetchCategory = (category) => {
-        fetchJSON(`/api/topic/${category.toLowerCase()}`)
-            .then(response => this.props.dispatchCategory({
-                // data: response,
-                // category: this.props.name.toLowerCase()
-                selectedCategory: response,
-                categoryName: this.props.name.toLowerCase()
+    //down code of fetch was properly , we changed downer for doing test while is not working if
+    // you dont make the promise as async and await bcs the test works more faster and cannot
+    // distinguish havebeencalled of dispatchproperty and brings error
 
-            }))
+
+    // fetchCategory = (category) => {
+    //
+    //     return fetchJSON(`/api/topic/${category.toLowerCase()}`)
+    //         .then(() => {
+    //             return this.props.dispatchCategory({
+    //                 // data: response,
+    //                 // category: this.props.name.toLowerCase()
+    //                 selectedCategory: response,
+    //                 categoryName: this.props.name.toLowerCase()
+    //             })
+    //         })
+    // }
+
+    fetchCategory = async () => {
+
+        console.log("fetch started",this.props.name);
+        const categoryName = this.props.name.toLowerCase();
+        const response = await fetchJSON(`/api/topic/${categoryName}`)
+        console.log("dispatchCategory and nextProps is ",this.nextProps);
+        return this.props.dispatchCategory({
+            selectedCategory: response,
+            categoryName
+        })
     }
 
-    componentDidMount() {
-        this.fetchCategory(this.props.name);
+
+    async componentDidMount() {
+        console.log("componentDidMount");
+        return await this.fetchCategory();
     }
 
-    componentWillReceiveProps(nextProps) {
+    async componentWillReceiveProps(nextProps) {
+        console.log("componentWillReceiveProps and netProps is ",nextProps.name);
         if (this.props.name !== nextProps.name) {
-            this.fetchCategory(nextProps.name)
+            console.log("props.name is differ from nextProps.name");
+            return await this.fetchCategory(nextProps.name)
         }
     }
 
