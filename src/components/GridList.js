@@ -33,31 +33,36 @@ export class GridList extends React.Component {
     //         })
     // }
 
-    fetchCategory = async () => {
+    fetchCategory = async (name) => {
+        const categoryName = name.toLowerCase();
+        const response = await fetchJSON(`/api/topic/${categoryName}`);
 
-        console.log("fetch started",this.props.name);
-        const categoryName = this.props.name.toLowerCase();
-        const response = await fetchJSON(`/api/topic/${categoryName}`)
-        console.log("dispatchCategory and nextProps is ",this.nextProps);
         return this.props.dispatchCategory({
             selectedCategory: response,
             categoryName
         })
     }
 
-
     async componentDidMount() {
-        console.log("componentDidMount");
-        return await this.fetchCategory();
+        return await this.fetchCategory(this.props.name);
     }
 
     async componentWillReceiveProps(nextProps) {
-        console.log("componentWillReceiveProps",nextProps.name);
         if (this.props.name !== nextProps.name) {
-            console.log("props.name is differ from nextProps.name");
             return await this.fetchCategory(nextProps.name)
         }
+
+        return false;
     }
+
+    //TODO: should use componentDidUpdate instead of "componentDidMount" and "componentWillReceiveProps" :to learn
+
+    // async componentDidUpdate(nextProps){   // or here should be previous prop ( this.props.name )
+    //     if(this.props.name !== nextProps.name) {
+    //         return await this.fetchCategory(nextProps.name)
+    //     }
+    // }
+
 
     render() {
         return (

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b28bbfa0-9147-4023-b754-03aace0a0f86" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GridList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GridList.js" afterDir="false" />
     </list>
@@ -65,7 +66,7 @@
           <entry key="css" value="4639" />
           <entry key="exam" value="415" />
           <entry key="html" value="1" />
-          <entry key="js" value="64015" />
+          <entry key="js" value="65000" />
           <entry key="json" value="2031" />
         </counts>
       </usages-collector>
@@ -74,7 +75,7 @@
           <entry key="CSS" value="4639" />
           <entry key="HTML" value="12" />
           <entry key="JSON" value="2031" />
-          <entry key="JavaScript" value="64384" />
+          <entry key="JavaScript" value="65369" />
           <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
@@ -86,14 +87,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49648875">
+    <splitter split-orientation="horizontal" split-proportion="0.46914357">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/__tests__/components/GridList.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+                <state relative-caret-position="544">
+                  <caret line="48" selection-start-line="48" selection-end-line="48" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -108,8 +109,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/GridList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="403">
-                  <caret line="56" column="38" lean-forward="true" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+                <state relative-caret-position="368">
+                  <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -233,8 +234,8 @@
         <option value="$PROJECT_DIR$/src/__tests__/components/NavigationClient.test.js" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/lib/requests.js" />
-        <option value="$PROJECT_DIR$/src/components/GridList.js" />
         <option value="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" />
+        <option value="$PROJECT_DIR$/src/components/GridList.js" />
       </list>
     </option>
   </component>
@@ -254,9 +255,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-16" />
+    <option name="y" value="63" />
+    <option name="width" value="1844" />
     <option name="height" value="1097" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -379,7 +381,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Gridlist page.should receive props">
+  <component name="RunManager" selected="Jest.Gridlist page.should not receive new props">
     <configuration name="Gridlist page" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -392,7 +394,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Gridlist page.componentWillReceiveProps" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="Gridlist page.should not receive new props" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
@@ -401,20 +403,7 @@
       <test-file value="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" />
       <test-names>
         <test-name value="Gridlist page" />
-        <test-name value="componentWillReceiveProps" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Gridlist page.is componentWillReceiveProps" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" />
-      <test-names>
-        <test-name value="Gridlist page" />
-        <test-name value="is componentWillReceiveProps" />
+        <test-name value="should not receive new props" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -444,20 +433,32 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="should not receive new props" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" />
+      <test-names>
+        <test-name value="should not receive new props" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Jest.Gridlist page.componentWillReceiveProps" />
-      <item itemvalue="Jest.Gridlist page.is componentWillReceiveProps" />
       <item itemvalue="Jest.Gridlist page" />
       <item itemvalue="Jest.Gridlist page.should render GridList" />
       <item itemvalue="Jest.Gridlist page.should receive props" />
+      <item itemvalue="Jest.Gridlist page.should not receive new props" />
+      <item itemvalue="Jest.should not receive new props" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Gridlist page.should not receive new props" />
+        <item itemvalue="Jest.should not receive new props" />
         <item itemvalue="Jest.Gridlist page.should receive props" />
-        <item itemvalue="Jest.Gridlist page" />
         <item itemvalue="Jest.Gridlist page.should render GridList" />
-        <item itemvalue="Jest.Gridlist page.is componentWillReceiveProps" />
-        <item itemvalue="Jest.Gridlist page.componentWillReceiveProps" />
+        <item itemvalue="Jest.Gridlist page" />
       </list>
     </recent_temporary>
   </component>
@@ -495,56 +496,56 @@
       <workItem from="1543227573944" duration="27424000" />
       <workItem from="1543565125701" duration="4181000" />
       <workItem from="1543581326252" duration="2499000" />
-      <workItem from="1543818931202" duration="31127000" />
+      <workItem from="1543818931202" duration="35512000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 26m 47s.xml">
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 35m 15s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 35m 28s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 36m 41s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 36m 55s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 40m 51s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 41m 00s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Gridlist_page_should_receive_props - 2018.12.05 at 11h 42m 40s.xml">
       <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 30m 30s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_not_receive_new_props - 2018.12.05 at 11h 42m 59s.xml">
+      <configuration name="should not receive new props" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 32m 54s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_not_receive_new_props - 2018.12.05 at 11h 43m 21s.xml">
+      <configuration name="should not receive new props" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 40m 28s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 40m 38s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 47m 02s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 14h 50m 06s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.04 at 15h 14m 03s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.05 at 10h 33m 18s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Gridlist_page_should_receive_props - 2018.12.05 at 10h 36m 40s.xml">
-      <configuration name="Gridlist page.should receive props" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Gridlist_page_should_not_receive_new_props - 2018.12.05 at 11h 43m 49s.xml">
+      <configuration name="Gridlist page.should not receive new props" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="670903000" />
+    <option name="totallyTimeSpent" value="675288000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="951" extended-state="6" />
+    <frame x="15" y="25" width="1844" height="1097" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1416516" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1289084" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.21862349" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34458673" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29452735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39701492" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,7 +553,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32942554" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24796274" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24776119" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32917467" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -718,6 +719,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
           <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="e#53#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -892,16 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/GridList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="56" column="38" lean-forward="true" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/components/Burger.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -925,8 +919,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/components/GridList.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="544">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/GridList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
