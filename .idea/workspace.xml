@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b28bbfa0-9147-4023-b754-03aace0a0f86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GridList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GridList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -66,7 +64,7 @@
           <entry key="css" value="4639" />
           <entry key="exam" value="415" />
           <entry key="html" value="1" />
-          <entry key="js" value="65324" />
+          <entry key="js" value="65356" />
           <entry key="json" value="2031" />
         </counts>
       </usages-collector>
@@ -75,7 +73,7 @@
           <entry key="CSS" value="4639" />
           <entry key="HTML" value="12" />
           <entry key="JSON" value="2031" />
-          <entry key="JavaScript" value="65693" />
+          <entry key="JavaScript" value="65725" />
           <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
@@ -109,8 +107,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/GridList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+                <state relative-caret-position="400">
+                  <caret line="67" selection-start-line="67" selection-end-line="73" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -234,8 +232,8 @@
         <option value="$PROJECT_DIR$/src/__tests__/components/NavigationClient.test.js" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/lib/requests.js" />
-        <option value="$PROJECT_DIR$/src/components/GridList.js" />
         <option value="$PROJECT_DIR$/src/__tests__/components/GridList.test.js" />
+        <option value="$PROJECT_DIR$/src/components/GridList.js" />
       </list>
     </option>
   </component>
@@ -496,7 +494,7 @@
       <workItem from="1543227573944" duration="27424000" />
       <workItem from="1543565125701" duration="4181000" />
       <workItem from="1543581326252" duration="2499000" />
-      <workItem from="1543818931202" duration="39538000" />
+      <workItem from="1543818931202" duration="39793000" />
     </task>
     <servers />
   </component>
@@ -533,7 +531,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="679314000" />
+    <option name="totallyTimeSpent" value="679569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="44" width="1844" height="1097" extended-state="0" />
@@ -696,7 +694,23 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor>
+            <folding>
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#42#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#35#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="n#!!doc" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+            </folding>
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -929,8 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/GridList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="400">
+          <caret line="67" selection-start-line="67" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

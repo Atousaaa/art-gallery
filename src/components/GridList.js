@@ -57,7 +57,8 @@ export class GridList extends React.Component {
     //     return false;
     // }
 
-    //TODO: should use componentDidUpdate instead of "componentDidMount" and "componentWillReceiveProps" :to learn
+    //TODO:(to learn) should use componentDidUpdate instead of "componentWillReceiveProps"
+    // but better using the componentWillReceiveProps
     //componentDidUpdate is called after the component updates (received new props or state).
     // This is why the parameters to this function is prevProps and prevState.
     //important :  if you wanted to do something before the component received
@@ -71,15 +72,6 @@ export class GridList extends React.Component {
         }
         return false;
     }
-
-
-
-    // async componentDidUpdate(nextProps){   // or here should be previous prop ( this.props.name )
-    //     if(this.props.name !== nextProps.name) {
-    //         return await this.fetchCategory(nextProps.name)
-    //     }
-    // }
-
 
     render() {
         return (
