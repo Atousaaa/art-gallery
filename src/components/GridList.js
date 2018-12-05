@@ -33,8 +33,10 @@ export class GridList extends React.Component {
     //         })
     // }
 
-    fetchCategory = async (name) => {
-        const categoryName = name.toLowerCase();
+    // fetchCategory = async (name) => {
+        fetchCategory = async (name) => {
+
+            const categoryName = name.toLowerCase();
         const response = await fetchJSON(`/api/topic/${categoryName}`);
 
         return this.props.dispatchCategory({
@@ -42,20 +44,35 @@ export class GridList extends React.Component {
             categoryName
         })
     }
-
+    //
     async componentDidMount() {
         return await this.fetchCategory(this.props.name);
     }
 
-    async componentWillReceiveProps(nextProps) {
-        if (this.props.name !== nextProps.name) {
-            return await this.fetchCategory(nextProps.name)
-        }
+    // async componentWillReceiveProps(nextProps) {
+    //     if (this.props.name !== nextProps.name) {
+    //         return await this.fetchCategory(nextProps.name)
+    //     }
+    //
+    //     return false;
+    // }
 
+    //TODO: should use componentDidUpdate instead of "componentDidMount" and "componentWillReceiveProps" :to learn
+    //componentDidUpdate is called after the component updates (received new props or state).
+    // This is why the parameters to this function is prevProps and prevState.
+    //important :  if you wanted to do something before the component received
+    // new props, you'd use componentWillReceiveProps, and if you wanted to do something after
+    // it received new props or state, you'd use componentDidUpdate.
+
+    async componentDidUpdate(prevProps) {
+        if(this.props.name !== prevProps.name) {
+
+            return await this.fetchCategory(this.props.name)
+        }
         return false;
     }
 
-    //TODO: should use componentDidUpdate instead of "componentDidMount" and "componentWillReceiveProps" :to learn
+
 
     // async componentDidUpdate(nextProps){   // or here should be previous prop ( this.props.name )
     //     if(this.props.name !== nextProps.name) {

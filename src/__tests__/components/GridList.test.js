@@ -45,7 +45,6 @@ describe("Gridlist page", function () {
         expect(fetchCategory).not.toHaveBeenCalled();
     })
 
-    //test the componentDidUpdate
 
 
 })
