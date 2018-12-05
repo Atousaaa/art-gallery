@@ -52,7 +52,7 @@ export class GridList extends React.Component {
     }
 
     async componentWillReceiveProps(nextProps) {
-        console.log("componentWillReceiveProps and netProps is ",nextProps.name);
+        console.log("componentWillReceiveProps",nextProps.name);
         if (this.props.name !== nextProps.name) {
             console.log("props.name is differ from nextProps.name");
             return await this.fetchCategory(nextProps.name)

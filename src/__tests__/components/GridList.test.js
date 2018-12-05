@@ -33,7 +33,6 @@ describe("Gridlist page", function () {
 
     } )
 
-    //
     // it( "should receive props", async function () {
     //
     //     request.fetchJSON = () => Promise.resolve(42);
@@ -44,15 +43,10 @@ describe("Gridlist page", function () {
     //     const fetchCategory = jest.fn();
     //     // let name = 'figure';
     //     // gridlist.setProps({ name });
-    // expect(dispatchCategory.calls.length).toBe(2);
+    //      expect(dispatchCategory.calls.length).toBe(2);
 
     // } )
 
 })
 
-
-// several tests interact with a database of cities.
-// You have a method fetchCategory() that must be called before each of these tests,
-// and a method clearCategoryDatabase() that must be called after each of these tests.
-// You can use beforeEach and afterEach.
 
