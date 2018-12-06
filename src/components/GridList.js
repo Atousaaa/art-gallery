@@ -33,10 +33,11 @@ export class GridList extends React.Component {
     //         })
     // }
 
-    // fetchCategory = async (name) => {
-        fetchCategory = async (name) => {
+    fetchCategory = async (name) => {
 
-            const categoryName = name.toLowerCase();
+        console.log("fetching",name);
+
+        const categoryName = name.toLowerCase();
         const response = await fetchJSON(`/api/topic/${categoryName}`);
 
         return this.props.dispatchCategory({
@@ -49,13 +50,13 @@ export class GridList extends React.Component {
         return await this.fetchCategory(this.props.name);
     }
 
-    // async componentWillReceiveProps(nextProps) {
-    //     if (this.props.name !== nextProps.name) {
-    //         return await this.fetchCategory(nextProps.name)
-    //     }
-    //
-    //     return false;
-    // }
+    async componentWillReceiveProps(nextProps) {
+        if (this.props.name !== nextProps.name) {
+            return await this.fetchCategory(nextProps.name)
+        }
+
+        return false;
+    }
 
     //TODO:(to learn) should use componentDidUpdate instead of "componentWillReceiveProps"
     // but better using the componentWillReceiveProps
@@ -65,13 +66,14 @@ export class GridList extends React.Component {
     // new props, you'd use componentWillReceiveProps, and if you wanted to do something after
     // it received new props or state, you'd use componentDidUpdate.
 
-    async componentDidUpdate(prevProps) {
-        if(this.props.name !== prevProps.name) {
-
-            return await this.fetchCategory(this.props.name)
-        }
-        return false;
-    }
+    // async componentDidUpdate(prevProps) {
+    //         console.log("component did update",prevProps);
+    //     if(this.props.name !== prevProps.name) {
+    //         console.log("inside if",this.props.name,prevProps.name);
+    //         return await this.fetchCategory(this.props.name)
+    //     }
+    //     return false;
+    // }
 
     render() {
         return (

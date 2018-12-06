@@ -37,15 +37,26 @@ describe("Gridlist page", function () {
 
         request.fetchJSON = () => Promise.resolve(42);
         const dispatchCategory = jest.fn();
-        const fetchCategory = jest.fn();
         const gridlist = shallow(<GridList name="landscape" dispatchCategory={dispatchCategory}/>, {disableLifecycleMethods: true});
 
         await gridlist.instance().componentWillReceiveProps({ name: "landscape" });
 
-        expect(fetchCategory).not.toHaveBeenCalled();
+        expect(dispatchCategory).not.toHaveBeenCalled();
     })
 
 
+    //you should uncomment the method after test bellow part
+    it("render componentDidUpdate", async () => {
+
+        request.fetchJSON = () => Promise.resolve(42);
+        const dispatchCategory = jest.fn();
+        const gridlist = shallow(<GridList name="figure" dispatchCategory= {dispatchCategory}/>, {disableLifeCycleMethods: true});
+
+        await gridlist.instance().componentDidUpdate({name:"landscape"});
+
+        expect(dispatchCategory).toHaveBeenCalledWith({"categoryName" : "figure", "selectedCategory": 42})
+
+    })
 
 })
 

@@ -29,7 +29,6 @@ describe("Album Page", function () {
         expect(album.find('<TopBat/>').exists()).toBe(true);
         expect(album.find('h1').hasClass('gallery-title')).toBe(true);
         expect(album.find(navigationClient).exists()).toBe(true);
-        
        //not complete
     })
 })

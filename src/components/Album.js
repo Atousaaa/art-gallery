@@ -6,7 +6,6 @@ import TopBar from "./TopBar";
 
 class Album extends React.Component {
 
-
     constructor(props){
         super(props);
         this.state = {

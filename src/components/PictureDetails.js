@@ -32,17 +32,17 @@ class PictureDetails extends React.Component {
         const name = this.props.match.params.name
         fetchJSON(`/api/detail/${category.toLowerCase()}/${name}`)
             .then(response => this.props.dispatchPhotos({
-                photoDetails:response,
+                photoDetails: response,
                 category,
                 name
-                }))
+            }))
     }
 
     componentDidMount() {
         //
         // if(this.props.photoDetails.length > 0) {
         //     console.log("photo details and state is full",this.state,this.props.photoDetails);
-            this.fetchDetails(this.props.match.params.category, this.props.match.params.name);
+        this.fetchDetails(this.props.match.params.category, this.props.match.params.name);
         // }
         // else if (this.props.photoDetails.length <= 0){
         //     console.log("photoDetails is empty bcs you refresh it",this.props.photoDetails);
@@ -50,7 +50,7 @@ class PictureDetails extends React.Component {
     }
 
     render() {
-        console.log('testingg', this.props.photoDetails)
+        console.log('testingg', typeof this.props.photoDetails)
 
         const { image, author, year, publisher, description } = this.props.photoDetails;
         return (
@@ -58,7 +58,7 @@ class PictureDetails extends React.Component {
                 <header className="gallery-header">
                     <TopBar/>
                     <div className="detail-title">
-                        <h1>{this.props.photoDetails.name} Details</h1>
+                        <h1>{this.props.photoDetails.title} Details</h1>
                     </div>
                 </header>
                 <div className="first-box">
@@ -66,7 +66,7 @@ class PictureDetails extends React.Component {
                         <img src={`${image}`} className="photo-detail" alt="scream"/>
                     </div>
                     <div className="short-desc">
-                        <p>Photo Name : {this.props.photoDetails.name}</p>
+                        <p>Photo Name : {this.props.photoDetails.title}</p>
                         <p>{`Author : ${author}`}</p>
                         <p>{`Year : ${year}`}</p>
                         <p>{`Publisher : ${publisher}`}</p>
@@ -75,20 +75,20 @@ class PictureDetails extends React.Component {
                 <div className="second-box">
                     <p>{`Description : ${description}`}</p>
                 </div>
-                <Review category={this.props.match.params.category} title={this.props.match.params.name } />
+                <Review category={this.props.match.params.category} title={this.props.match.params.name}/>
             </div>
         )
     }
 }
 
 PictureDetails.defaultProps = {
-  // pictureDetails: {}
-    photoDetails: []
+    // pictureDetails: {}
+    photoDetails:{}
 }
 
 PictureDetails.propTypes = {
-  // pictureDetails: PropTypes.object
-    photoDetails: PropTypes.array,
+    // pictureDetails: PropTypes.object
+    photoDetails: PropTypes.object,
     dispatchPhotos: PropTypes.func
 }
 
@@ -97,7 +97,7 @@ const mapStateToProps = (state) => {
     // console.log("?????picture", state.photoDetails.photoDetails)
     // const pictureDetails = state.categories[category].find(({ title }) => title === name);
     console.log(';the statw is...', state)
-        const photoDetails = state.photoDetails.photoDetails;
+    const photoDetails = state.photoDetails.photoDetails;
     const test = 1;
     return {
         photoDetails,
