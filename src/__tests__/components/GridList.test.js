@@ -61,3 +61,5 @@ describe("Gridlist page", function () {
 })
 
 
+//important : you should mock the property which is given from outside (dependency injection) not
+//for example the fetchCategory which is internal function , otherwise is not correct
