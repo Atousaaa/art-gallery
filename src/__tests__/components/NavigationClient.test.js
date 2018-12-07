@@ -49,3 +49,6 @@ describe ( "NavigationClient Page", function () {
 // check the elements of array by at(#number of element position) example ***at(0)*** which is first
 // element, -----3-----which is work as same as ***first()***,----4-----using slice which start the
 //array from that element example slice(1)***which start the array from the first element not 0
+
+//FINISH
+

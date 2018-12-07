@@ -8,28 +8,43 @@ import PropTypes from "prop-types";
 
 
 
-class ArtistDetails extends React.Component{
+export class ArtistDetails extends React.Component{
 
-    fetchArtistDetails = () => {
+    // fetchArtistDetails = () => {
+    //     console.log("fetch",this.props.match.params.name);
+    //     const name = this.props.match.params.name;
+    //     // const name = this.props.artistData.name ;
+    //
+    //     fetchJSON(`/api/artists/${name.toLowerCase()}`)
+    //         // .then(response => this.props.dispatchArtist({
+    //         //     artistData : response
+    //         // }))
+    //        return this.props.dispatchArtist({
+    //             artistData : response
+    //         })
+    // }
+
+//we changed in bellow style bcs of doing test
+
+    fetchArtistDetails = async () => {
+
         const name = this.props.match.params.name;
-        fetchJSON(`/api/artists/${name.toLowerCase()}`)
-            .then(response => this.props.dispatchArtist({
-                artistData : response
-            }))
+        const response = await fetchJSON(`/api/artists/${name.toLowerCase()}`);
+
+        return this.props.dispatchArtist({
+            artistData : response
+        })
     }
 
-    componentDidMount() {
-            this.fetchArtistDetails();
-        }
 
+    componentDidMount() {
+        this.fetchArtistDetails();
+        }
 
     render(){
         console.log("properties of artist", this.props.match.params.name);
-        console.log("artist from mapstate", this.props.artistData);
-
         return(
             <div>
-
                 <header className="gallery-header">
                     <TopBar/>
                     <div className="detail-title">
@@ -49,13 +64,15 @@ class ArtistDetails extends React.Component{
         )
     }
 }
+
 ArtistDetails.defaultProps = {
     artistData : {}
 }
 
 ArtistDetails.propTypes = {
     artist: PropTypes.string,
-    artistData: PropTypes.object
+    artistData: PropTypes.object,
+    dispatchArtist: PropTypes.func
 }
 
 

@@ -75,3 +75,6 @@ describe("TopBar Page", function () {
 
 //find out how to set spy/stub in jest on componentFunction
 // jsdom setup, make window working in test environment
+
+
+//finish
