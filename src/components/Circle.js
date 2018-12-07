@@ -11,6 +11,7 @@ class Circle extends React.Component {
 
     render() {
         const { imgUrl,name } = this.props;
+        console.log("in render",this.props.name);
         return (
             <span className="circle"  style={{backgroundImage: 'url("'+imgUrl+'")'}}>
                 <Link className="circle-link" to={`/Album/${this.props.name}`}>{name}</Link>
