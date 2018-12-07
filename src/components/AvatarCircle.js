@@ -10,7 +10,7 @@ import './AvatarCircle.css';
 class AvatarCircle extends React.Component{
 
     render(){
-
+        console.log(this.props.imgUrl);
         const { imgUrl } = this.props;
 
         return(
