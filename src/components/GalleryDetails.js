@@ -8,22 +8,49 @@ import { setGalleryDetails } from '../actions/GalleriesAction';
 import './GalleryDetails.css';
 import { fetchJSON } from "../lib/requests";
 
-class GalleryDetails extends React.Component{
+export class GalleryDetails extends React.Component{
 
-    fetchGalleryDetails = () => {
-       const title = this.props.match.params.title;
-        fetchJSON(`/api/galleries/${title}`)
-            .then(response => this.props.dispatchGalleryDetails({
-                photoData : response
-            }))
+
+    // fetchGalleryDetails = () => {
+    //    const title = this.props.match.params.title;
+    //     fetchJSON(`/api/galleries/${title}`)
+    //         .then(response => this.props.dispatchGalleryDetails({
+    //             photoData : response
+    //         }))
+    // }
+
+
+    fetchGalleryDetails =async () => {
+        console.log("inside fetch");
+        const title = this.props.match.params.title;
+        console.log("title is",title);
+
+        const response = await fetchJSON(`/api/galleries/${title}`);
+        console.log("response",response)
+
+        return this.props.dispatchGalleryDetails({
+            photoData : response
+        })
     }
 
-    componentDidMount() {
+
+    // componentDidMount() {
+    //     const photoData = this.props.photoData;
+    //
+    //     if (isEmpty(photoData)){
+    //         this.fetchGalleryDetails();
+    //     }
+    // }
+
+
+    async componentDidMount() {
         const photoData = this.props.photoData;
 
         if (isEmpty(photoData)){
-            this.fetchGalleryDetails();
+            return await this.fetchGalleryDetails();
         }
+
+        return false;
     }
 
     render(){
