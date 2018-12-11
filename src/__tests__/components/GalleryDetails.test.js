@@ -62,3 +62,18 @@ it("should fetch photoData on mount when its empty ", async () => {
 
 })
 
+
+it("should render elements", function () {
+    request.fetchJSON = () => Promise.resolve(42);
+    const dispatchGalleryDetails = jest.fn();
+    const title="portrait1";
+
+    const gallerydetails = shallow(<GalleryDetails  photoData={{title : title, description : "hello", image : "/images/Author.png"}} dispatchGalleryDetails={dispatchGalleryDetails} match={{ params: { title }}} />, { disableLifecycleMethods: true });
+
+    expect(gallerydetails.find('.description-box').find('p').text()).toBe("Description : hello")
+    expect(gallerydetails.find('.first-box img').prop('src')).toBe('/images/Author.png');
+    expect (gallerydetails.find('h1').text()).toBe('"portrait1" Gallery Details');
+})
+
+
+//FINISH

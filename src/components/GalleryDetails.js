@@ -56,7 +56,7 @@ export class GalleryDetails extends React.Component{
 
     render(){
         const title = this.props.match.params.title;
-        console.log("inside GALLERY DETAILS",this.props.photoData)
+        console.log("inside GALLERY DETAILS",this.props.photoData.title)
         return(
             <div>
 
