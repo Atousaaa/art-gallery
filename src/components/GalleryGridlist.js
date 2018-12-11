@@ -12,20 +12,38 @@ import './GalleryGridlist.css';
 import MediaCard from "./MediaCard";
 import Sorting from "./Sorting";
 
-class GalleryGridlist extends React.Component {
+export class GalleryGridlist extends React.Component {
 
 
-    FetchGalleries = () => {
-        fetchJSON('/api/galleries')
-            .then(response => this.props.dispatchGalleries(response))
-            .catch(error => "Please Try again :)")
+    // FetchGalleries = () => {
+    //     fetchJSON('/api/galleries')
+    //         .then(response => this.props.dispatchGalleries(response))
+    //         .catch(error => "Please Try again :)")
+    // }
+
+// I will change the fetch for test
+
+    FetchGalleries = async () => {
+        console.log("inside fetch");
+       const response = await fetchJSON('/api/galleries')
+            return this.props.dispatchGalleries(response)
+
+           // .catch(error => "Please Try again :)")
     }
 
-    componentDidMount() {
+    // componentDidMount() {
+    //     if ( this.props.galleriesList.length === 0 ) {
+    //     // if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
+    //         console.log("length of galleryList", this.props.galleriesList.length);
+    //         this.FetchGalleries();
+    //     }
+    // }
+
+    async componentDidMount() {
         if ( this.props.galleriesList.length === 0 ) {
-        // if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
+            // if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
             console.log("length of galleryList", this.props.galleriesList.length);
-            this.FetchGalleries();
+            return await this.FetchGalleries();
         }
     }
 

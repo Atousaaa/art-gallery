@@ -16,7 +16,6 @@ describe("Gallery Gridlist", function () {
         const gallerydetails = shallow(<GalleryDetails dispatchGalleryDetails={dispatchGalleryDetails} match={{ params: { title }}} />, { disableLifecycleMethods: true });
 
         expect(gallerydetails.exists()).toBe(true);
-
     })
 
 it("should render fetch", async () => {
