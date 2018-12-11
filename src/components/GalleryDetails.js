@@ -45,11 +45,12 @@ export class GalleryDetails extends React.Component{
 
     async componentDidMount() {
         const photoData = this.props.photoData;
-
+        console.log("photo data",photoData);
         if (isEmpty(photoData)){
+            console.log("is empty")
             return await this.fetchGalleryDetails();
         }
-
+        console.log("photo data is not empty")
         return false;
     }
 
