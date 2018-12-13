@@ -80,7 +80,6 @@ export class GalleryGridlist extends React.Component {
         )
 
     }
-
 }
 
 GalleryGridlist.defaultProps = {
@@ -104,3 +103,4 @@ export default connect(
 )(GalleryGridlist)
 
 
+//for using js inside the html write code inside brackets { .... }
