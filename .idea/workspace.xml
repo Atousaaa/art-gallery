@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b28bbfa0-9147-4023-b754-03aace0a0f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GalleryGridlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GalleryGridlist.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,7 +40,7 @@
           <entry key="ico" value="1" />
           <entry key="jpeg" value="16" />
           <entry key="jpg" value="17" />
-          <entry key="js" value="585" />
+          <entry key="js" value="600" />
           <entry key="json" value="162" />
           <entry key="md" value="5" />
           <entry key="png" value="1" />
@@ -54,7 +54,7 @@
           <entry key="HTML" value="5" />
           <entry key="Image" value="35" />
           <entry key="JSON" value="162" />
-          <entry key="JavaScript" value="589" />
+          <entry key="JavaScript" value="604" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="1" />
@@ -66,7 +66,7 @@
           <entry key="css" value="4639" />
           <entry key="exam" value="415" />
           <entry key="html" value="1" />
-          <entry key="js" value="74046" />
+          <entry key="js" value="76518" />
           <entry key="json" value="2031" />
         </counts>
       </usages-collector>
@@ -75,7 +75,7 @@
           <entry key="CSS" value="4639" />
           <entry key="HTML" value="12" />
           <entry key="JSON" value="2031" />
-          <entry key="JavaScript" value="74415" />
+          <entry key="JavaScript" value="76887" />
           <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
@@ -87,90 +87,110 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4225174">
+    <splitter split-orientation="horizontal" split-proportion="0.6057866">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.61494255">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/__tests__/components/ArtistDetails.test.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="272">
-                      <caret line="34" column="46" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="46" />
-                      <folding>
-                        <element signature="e#0#26#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="290">
-                      <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-                      <folding>
-                        <element signature="e#0#26#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="694">
-                      <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="101" />
-                      <folding>
-                        <element signature="e#0#26#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/__tests__/components/BurgerItems.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" selection-start-line="19" selection-end-line="21" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.5590551">
-          <split-first>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/components/GalleryGridlist.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="349">
-                      <caret line="42" column="36" selection-start-line="41" selection-start-column="16" selection-end-line="42" selection-end-column="36" />
-                      <folding>
-                        <element signature="e#0#26#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/components/GalleryDetails.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="545">
-                      <caret line="64" selection-start-line="64" selection-end-line="65" />
-                      <folding>
-                        <element signature="e#0#26#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/GalleryGridlist.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="280">
+                  <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="506">
+                  <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/GalleryDetails.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/BurgerItems.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/__tests__/components/Gallery.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Gallery.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" selection-start-line="24" selection-end-line="25" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -184,10 +204,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>equal</find>
-      <find>active</find>
-      <find>setS</find>
-      <find>even</find>
       <find>evene</find>
       <find>createelemen</find>
       <find>value</find>
@@ -214,6 +230,10 @@
       <find>imag</find>
       <find>img</find>
       <find>then</find>
+      <find>map</find>
+      <find>Please Try again :</find>
+      <find>constr</find>
+      <find>setState</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -280,14 +300,14 @@
         <option value="$PROJECT_DIR$/src/__tests__/components/AvatarCircle.test.js" />
         <option value="$PROJECT_DIR$/src/components/AvatarCircle.js" />
         <option value="$PROJECT_DIR$/src/components/burgerOptions.json" />
-        <option value="$PROJECT_DIR$/src/__tests__/components/BurgerItems.test.js" />
         <option value="$PROJECT_DIR$/src/components/Circle.js" />
         <option value="$PROJECT_DIR$/src/__tests__/components/Circle.test.js" />
         <option value="$PROJECT_DIR$/src/__tests__/components/Gallery.test.js" />
         <option value="$PROJECT_DIR$/src/components/GalleryDetails.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" />
+        <option value="$PROJECT_DIR$/src/__tests__/components/BurgerItems.test.js" />
         <option value="$PROJECT_DIR$/src/components/GalleryGridlist.js" />
         <option value="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" />
-        <option value="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" />
       </list>
     </option>
   </component>
@@ -308,10 +328,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="40" />
-    <option name="width" value="1843" />
-    <option name="height" value="1045" />
+    <option name="x" value="-87" />
+    <option name="y" value="23" />
+    <option name="width" value="2007" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -410,8 +430,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.GalleyGridlist.should render componentDidMount">
-    <configuration name="GalleyGridlist.should render GalleryGridlist" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.GalleyGridlist.should render the map">
+    <configuration name="GalleyGridlist.should catch error" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
@@ -420,7 +440,7 @@
       <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" />
       <test-names>
         <test-name value="GalleyGridlist" />
-        <test-name value="should render GalleryGridlist" />
+        <test-name value="should catch error" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -437,56 +457,59 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="should render componentDidMount with prop photoData empty" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleyGridlist.should render the div and GridList component" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" />
       <test-names>
-        <test-name value="should render componentDidMount with prop photoData empty" />
+        <test-name value="GalleyGridlist" />
+        <test-name value="should render the div and GridList component" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="should render componentDidMount with prop photoData" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleyGridlist.should render the elements" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" />
       <test-names>
-        <test-name value="should render componentDidMount with prop photoData" />
+        <test-name value="GalleyGridlist" />
+        <test-name value="should render the elements" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="should render elements" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleyGridlist.should render the map" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js" />
       <test-names>
-        <test-name value="should render elements" />
+        <test-name value="GalleyGridlist" />
+        <test-name value="should render the map" />
       </test-names>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.should render componentDidMount with prop photoData empty" />
-      <item itemvalue="Jest.should render componentDidMount with prop photoData" />
-      <item itemvalue="Jest.should render elements" />
-      <item itemvalue="Jest.GalleyGridlist.should render GalleryGridlist" />
       <item itemvalue="Jest.GalleyGridlist.should render componentDidMount" />
+      <item itemvalue="Jest.GalleyGridlist.should render the elements" />
+      <item itemvalue="Jest.GalleyGridlist.should render the map" />
+      <item itemvalue="Jest.GalleyGridlist.should render the div and GridList component" />
+      <item itemvalue="Jest.GalleyGridlist.should catch error" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.GalleyGridlist.should render the map" />
+        <item itemvalue="Jest.GalleyGridlist.should catch error" />
+        <item itemvalue="Jest.GalleyGridlist.should render the div and GridList component" />
+        <item itemvalue="Jest.GalleyGridlist.should render the elements" />
         <item itemvalue="Jest.GalleyGridlist.should render componentDidMount" />
-        <item itemvalue="Jest.GalleyGridlist.should render GalleryGridlist" />
-        <item itemvalue="Jest.should render elements" />
-        <item itemvalue="Jest.should render componentDidMount with prop photoData empty" />
-        <item itemvalue="Jest.should render componentDidMount with prop photoData" />
       </list>
     </recent_temporary>
   </component>
@@ -524,56 +547,56 @@
       <workItem from="1543227573944" duration="27424000" />
       <workItem from="1543565125701" duration="4181000" />
       <workItem from="1543581326252" duration="2499000" />
-      <workItem from="1543818931202" duration="105957000" />
+      <workItem from="1543818931202" duration="122761000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="should_render_elements - 2018.12.11 at 12h 23m 22s.xml">
-      <configuration name="should render elements" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 00m 55s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_render_elements - 2018.12.11 at 12h 24m 00s.xml">
-      <configuration name="should render elements" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 01m 12s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_GalleryGridlist - 2018.12.11 at 12h 38m 15s.xml">
-      <configuration name="GalleyGridlist.should render GalleryGridlist" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 03m 12s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_GalleryGridlist - 2018.12.11 at 12h 38m 46s.xml">
-      <configuration name="GalleyGridlist.should render GalleryGridlist" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 04m 03s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_GalleryGridlist - 2018.12.11 at 12h 42m 14s.xml">
-      <configuration name="GalleyGridlist.should render GalleryGridlist" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 04m 57s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_GalleryGridlist - 2018.12.11 at 12h 42m 24s.xml">
-      <configuration name="GalleyGridlist.should render GalleryGridlist" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 06m 14s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_componentDidMount - 2018.12.11 at 14h 25m 49s.xml">
-      <configuration name="GalleyGridlist.should render componentDidMount" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 06m 24s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_componentDidMount - 2018.12.11 at 14h 27m 03s.xml">
-      <configuration name="GalleyGridlist.should render componentDidMount" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 06m 46s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_componentDidMount - 2018.12.11 at 14h 31m 50s.xml">
-      <configuration name="GalleyGridlist.should render componentDidMount" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 07m 20s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="GalleyGridlist_should_render_componentDidMount - 2018.12.11 at 14h 48m 07s.xml">
-      <configuration name="GalleyGridlist.should render componentDidMount" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="GalleyGridlist_should_render_the_map - 2018.12.13 at 10h 07m 45s.xml">
+      <configuration name="GalleyGridlist.should render the map" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="745733000" />
+    <option name="totallyTimeSpent" value="762537000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="40" width="1843" height="1045" extended-state="0" />
+    <frame x="-87" y="23" width="2007" height="1098" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12897915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118328296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.21791045" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26967472" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32604373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39701492" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -581,7 +604,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32942554" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2160555" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24563445" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32917467" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -833,23 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/About.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Album.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -861,26 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BurgerItems.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Album.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,71 +900,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Gallery.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Circle.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/BurgerItems.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Burger.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#244#270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/AvatarCircle.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/components/GridList.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/ArtistDetails.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -995,10 +920,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/About.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Album.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/ArtistDetails.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/AvatarCircle.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Circle.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Burger.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#244#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/Gallery.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/GalleryDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="64" selection-start-line="64" selection-end-line="65" />
+        <state relative-caret-position="330">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BurgerItems.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__tests__/components/BurgerItems.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1007,18 +1040,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/GalleryGridlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="42" column="36" selection-start-line="41" selection-start-column="16" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryDetails.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="101" />
+        <state relative-caret-position="280">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1027,8 +1050,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/components/GalleryGridlist.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

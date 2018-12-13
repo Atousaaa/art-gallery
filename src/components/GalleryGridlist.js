@@ -14,6 +14,12 @@ import Sorting from "./Sorting";
 
 export class GalleryGridlist extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: false,
+        };
+    }
 
     // FetchGalleries = () => {
     //     fetchJSON('/api/galleries')
@@ -24,11 +30,15 @@ export class GalleryGridlist extends React.Component {
 // I will change the fetch for test
 
     FetchGalleries = async () => {
-        console.log("inside fetch");
-       const response = await fetchJSON('/api/galleries')
+        try {
+            const response = await fetchJSON('/api/galleries')
             return this.props.dispatchGalleries(response)
-
-           // .catch(error => "Please Try again :)")
+        }
+        catch (error) {
+            this.setState({ error: true });
+        }
+///        this.setState({ [ event.target.name ]: event.target.value });
+        // .catch(error => "Please Try again :)")
     }
 
     // componentDidMount() {
@@ -40,7 +50,7 @@ export class GalleryGridlist extends React.Component {
     // }
 
     async componentDidMount() {
-        if ( this.props.galleriesList.length === 0 ) {
+        if (this.props.galleriesList.length === 0) {
             // if (!Array.isArray(this.props.galleriesList) || ( this.props.galleriesList.length === 0 )) {
             console.log("length of galleryList", this.props.galleriesList.length);
             return await this.FetchGalleries();
@@ -57,8 +67,9 @@ export class GalleryGridlist extends React.Component {
                     <Sorting/>
                 </div>
                 <GridListComponent cellHeight={"auto"} className="gridList" cols={3}>
-                    { galleriesList.map( p =>
-                        // Array.isArray(galleriesList) && galleriesList.map(p =>
+                    {this.state.error ? <h1>this is error</h1> :
+                        galleriesList.map(p =>
+                            // Array.isArray(galleriesList) && galleriesList.map(p =>
                             <GridListTile key={p.id}>
                                 <MediaCard gallery={p}/>
                             </GridListTile>)
