@@ -5,6 +5,8 @@ const port = process.env.PORT || 5000;
 
 // work with the file system on your computer.
 const fs = require('fs');
+const mongoose = require('mongoose');
+const connection = mongoose.connect('mongodb://localhost/art');
 
 
 const landscape = require('./landscape.json');
@@ -20,7 +22,7 @@ const categories = {
 };
 
 app.use(bodyParser.json());
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
@@ -43,19 +45,19 @@ app.get('/api/topic/:topic', (req, res) => {
 });
 
 app.get('/api/detail/:topic/:title', (req, res) => {
-       const topic = req.params.topic;
-       const title = req.params.title;
-console.log("fetching ....")
-       const category = categories[topic];
+    const topic = req.params.topic;
+    const title = req.params.title;
+    console.log("fetching ....")
+    const category = categories[ topic ];
 
-        const found = category.find(function(painting) {
+    const found = category.find(function (painting) {
 
-        return painting.title === title ;
+        return painting.title === title;
     });
 
-        if(!found) {
-            return res.status(500).send(`wrong topic: ${Object.keys(categories)}` );
-        }
+    if (!found) {
+        return res.status(500).send(`wrong topic: ${Object.keys(categories)}`);
+    }
 
     res.json(found);
 });
@@ -64,10 +66,10 @@ console.log("fetching ....")
 //for fetching the gallery shows
 
 app.get('/api/galleries', (req, res) => {
-    if(fs.existsSync('./server/gallery.json')){
+    if (fs.existsSync('./server/gallery.json')) {
         return res.json(require('./gallery'));
     }
-    else{
+    else {
         return res.status(500).send('No Gallery at the moment exists');
     }
 });
@@ -75,19 +77,19 @@ app.get('/api/galleries', (req, res) => {
 
 app.get('/api/galleries/:title', (req, res) => {
 
-    console.log("fetching the gallery details for one photo",req.params.title);
+    console.log("fetching the gallery details for one photo", req.params.title);
     const title = req.params.title;
 
-    const galleriesList = require ('./gallery');
+    const galleriesList = require('./gallery');
 
-    const found = galleriesList.find(function(element) {
+    const found = galleriesList.find(function (element) {
 
-        return element.title === title ;
+        return element.title === title;
     });
 
-    if(!found) {
+    if (!found) {
         console.log("there is no found");
-        return res.status(500).send(`wrong topic: ${Object.keys(categories)}` );
+        return res.status(500).send(`wrong topic: ${Object.keys(categories)}`);
     }
 
     res.json(found);
@@ -98,28 +100,28 @@ app.get('/api/galleries/:title', (req, res) => {
 
 app.get('/api/artists/:name', (req, res) => {
 
-    console.log("inside artist fetching",req.params.name);
+    console.log("inside artist fetching", req.params.name);
     const name = req.params.name;
-    console.log("artist name from request",name);
+    console.log("artist name from request", name);
     const fullnameArray = name.split(' ');
 
-    if(fullnameArray.includes("fiorda")){
+    if (fullnameArray.includes("fiorda")) {
 
         console.log("artist is fiorda");
         return res.json(require('./artists/fiorda'));
 
-    }else if (fullnameArray.includes("london")){
+    } else if (fullnameArray.includes("london")) {
 
         console.log("artist is london");
         return res.json(require('./artists/london'));
 
-    }else if (fullnameArray.includes("robert")){
+    } else if (fullnameArray.includes("robert")) {
 
         console.log("artist is robert");
 
         return res.json(require('./artists/robert'));
 
-    }else if (fullnameArray.includes("slonem")){
+    } else if (fullnameArray.includes("slonem")) {
 
         console.log("artist is slonem");
         return res.json(require('./artists/slonem'));
@@ -131,8 +133,6 @@ app.get('/api/artists/:name', (req, res) => {
 });
 
 
-
-
 // for showing reviews
 
 app.get('/api/reviews/:topic/:title', (req, res) => {
@@ -140,9 +140,9 @@ app.get('/api/reviews/:topic/:title', (req, res) => {
     const title = req.params.title;
     console.log("fetching reviews ....")
 
-    function getReviews(topic,title){
+    function getReviews(topic, title) {
 
-        if(fs.existsSync(`./server/reviews/${topic}/${title}.json`)) {
+        if (fs.existsSync(`./server/reviews/${topic}/${title}.json`)) {
             return require(`./reviews/${topic}/${title}.json`);
         }
         else {
@@ -150,11 +150,10 @@ app.get('/api/reviews/:topic/:title', (req, res) => {
         }
     }
 
-    const reviews = getReviews(topic,title);
+    const reviews = getReviews(topic, title);
     console.log("hier///", reviews)
     res.json(reviews);
 });
-
 
 
 app.post('/api/savereview', (req, res) => {
@@ -166,47 +165,62 @@ app.post('/api/savereview', (req, res) => {
     const fileData = makeNewDirectory(recievedCategory, recievedTitle);
 
     if (fileData != null) {
-        saveReview (recievedCategory,recievedTitle,recievedUsername,recievedText,fileData);
-    }else{   // when the file is empty(only first time)
-        saveFirstReview (recievedCategory,recievedTitle,recievedUsername,recievedText);
+        saveReview(recievedCategory, recievedTitle, recievedUsername, recievedText, fileData);
+    } else {   // when the file is empty(only first time)
+        saveFirstReview(recievedCategory, recievedTitle, recievedUsername, recievedText);
     }
     res.json('Review was saved');
 })
+//inserting for MongoDB
+app.get("/testDB", (req, res) => {
+    const Schema = mongoose.Schema;
+    const ObjectId = Schema.ObjectId;
+    const painters = new Schema({
+        name: String
+    });
 
-function saveFirstReview (recievedCategory,recievedTitle,recievedUsername,recievedText){
-    const newFileContent = [{
-                name: recievedUsername,
-                review: recievedText
-    }]
+    //const painter = mongoose.model('painters', painters).find({ name: "David" });
+    console.log(mongoose.model('painters', painters).find({ },  function (err, docs) {
+         docs.forEach((doc) => console.log(doc))
+    }));
+
+
+//console.log(painter)
+
+    res.json({ a: "b" })
+})
+
+function saveFirstReview(recievedCategory, recievedTitle, recievedUsername, recievedText) {
+    const newFileContent = [ {
+        name: recievedUsername,
+        review: recievedText
+    } ]
     fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(newFileContent, null, 4));
 }
 
-function saveReview (recievedCategory,recievedTitle,recievedUsername,recievedText,fileData){
+function saveReview(recievedCategory, recievedTitle, recievedUsername, recievedText, fileData) {
 
-        fileData.push({ "name": recievedUsername, "review": recievedText });
-        fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
+    fileData.push({ "name": recievedUsername, "review": recievedText });
+    fs.writeFileSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`, JSON.stringify(fileData, null, 4));
 }
 
 
-function makeNewDirectory(recievedCategory,recievedTitle){
+function makeNewDirectory(recievedCategory, recievedTitle) {
 
-    if ((!fs.existsSync(`./server/reviews/${recievedCategory}`)) && (!fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) ){
+    if (( !fs.existsSync(`./server/reviews/${recievedCategory}`) ) && ( !fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`) )) {
         fs.mkdirSync(`./server/reviews/${recievedCategory}`);
         return null
     }
-    else if(fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) {
+    else if (fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) {
         return require(`./reviews/${recievedCategory}/${recievedTitle}.json`)
     }
-    else if ((fs.existsSync(`./server/reviews/${recievedCategory}`)) && (!fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`)) ){
+    else if (( fs.existsSync(`./server/reviews/${recievedCategory}`) ) && ( !fs.existsSync(`./server/reviews/${recievedCategory}/${recievedTitle}.json`) )) {
         return null
     }
 }
 
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
-
-
 
 
 //start totaly fine post data
@@ -277,8 +291,6 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 // })
 //
 ////finish totally fine post data
-
-
 
 
 // res.send(req.param('topic'));
